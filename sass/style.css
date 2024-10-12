@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 74px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ebecf2;
+  color: #faeaea;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 5;
+  transition: background-color 0.6;
+}
+nav .navbar-toggler {
+  padding: 10px 20px;
+  color: #faeaea;
+  font-size: 22px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+  font-size: 16px;
+  color: #faeaea;
+}
+nav a.nav-link {
+  color: #faeaea;
+}
+nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link.show {
+  color: white;
+}
+
+header.hero-img {
+  position: relative;
+  height: 100vh;
+  font-size: 16px;
+  color: #faeaea;
+  background-image: url("../img/furniture-998265_1920.jpg");
+  background-size: cover;
+  background-position: 40%;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header.hero-img h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: lighter;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
+}
+header.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+header.hero-img .btn {
+  color: #faeaea;
+}
+
+.about-me h1 {
+  color: #3f3a3a;
+}
+.about-me .text {
+  margin: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3f3a3a;
+}
+
+.portfolio {
+  background-color: #281207;
+}
+
+@media (min-width: 576px) {
+  nav .navbar-toggler {
+    font-size: 26px;
+  }
+  nav .navbar-brand {
+    font-size: 18px;
+  }
+  nav a.nav-link {
+    font-size: 20px;
+  }
+  header.hero-img h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  nav .navbar-brand {
+    font-size: 22px;
+  }
+  header.hero-img h1 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

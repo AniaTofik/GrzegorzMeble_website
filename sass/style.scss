@@ -1,0 +1,155 @@
+@use './colors' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-padding-top: 74px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: $bg-color;
+	color: $light-brown;
+}
+
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav {
+	text-transform: uppercase;
+	z-index: 5;
+	transition: background-color 0.6;
+
+	.navbar-toggler {
+		padding: 10px 20px;
+		color: $light-brown;
+		font-size: 22px;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+		font-size: 16px;
+		color: $light-brown;
+	}
+	a.nav-link {
+		color: $light-brown;
+	}
+	.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+		color: white;
+	}
+}
+
+header.hero-img {
+	position: relative;
+	height: 100vh;
+	font-size: 16px;
+	color: $light-brown;
+	background-image: url('../img/furniture-998265_1920.jpg');
+	background-size: cover;
+	background-position: 40%;
+	background-attachment: fixed;
+
+	z-index: 0;
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: lighter;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+	}
+	.btn {
+	color: $light-brown;
+	}
+}
+
+.about-me {
+	h1 {
+		color:$dark-brown;
+	}
+	.text {
+		margin: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		color:$dark-brown;
+	}
+}
+
+.portfolio {
+	background-color: $bg-dark;
+}
+
+
+@media (min-width: 576px) {
+	nav {
+		.navbar-toggler {
+			font-size: 26px;
+		}
+	
+		.navbar-brand {
+			font-size: 18px;
+		}
+		a.nav-link {
+			font-size: 20px;
+		}
+	}
+	header.hero-img h1 {
+		font-size: 32px;
+	}
+	p {
+		font-size: 18px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	nav {	
+		.navbar-brand {
+			font-size: 22px;
+		}
+	}
+	header.hero-img h1 {
+		font-size: 42px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+
+// @media (min-width: 992px) {
+// 	html {
+// 		scroll-padding-top: 72px;
+// 	}
+// 	.aboutus-hero {
+// 		background-image: url('../img/technology-2818664_1920.jpg');
+// 	}
+// }
+
+// @media (min-width: 1200px) {
+// 	header.hero-img {
+// 		background-image: url('../img/hero-big.jpeg');
+// 	}
+// }
