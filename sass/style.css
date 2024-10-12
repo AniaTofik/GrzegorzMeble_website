@@ -99,13 +99,14 @@ header.hero-img .btn:hover {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(90deg, rgb(243, 234, 232) 0%, rgb(239, 230, 228) 0%, rgb(203, 195, 193) 0%, rgb(184, 176, 175) 0%, rgba(168, 161, 160, 0.7567401961) 0%, rgb(136, 130, 129) 9%, rgb(63, 58, 58) 52%);
+  padding: 20px;
 }
-.portfolio .card-img-top {
-  margin-bottom: 15px;
-  height: 20vh;
+.portfolio .portfolio.card {
+  margin: 20px;
+}
+.portfolio .portfolio.card .card-img-top {
   width: 18rem;
-  background-size: cover;
-  background-position: center;
+  margin: 20px;
 }
 
 @media (min-width: 576px) {
@@ -123,12 +124,6 @@ header.hero-img .btn:hover {
   }
   p {
     font-size: 18px;
-  }
-  .card-img-top {
-    margin-bottom: 15px;
-    width: 20vw;
-    background-size: cover;
-    background-position: center;
   }
 }
 @media (min-width: 768px) {

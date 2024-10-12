@@ -108,15 +108,18 @@ header.hero-img {
 	align-items: center;
 	flex-direction: column;
 	background: $bg-dark;
+	padding: 20px;
 
+.portfolio.card {
+	margin: 20px;
 	.card-img-top {
-	margin-bottom: 15px;
-	height: 20vh;
-	width: 18rem;
-	background-size: cover;
-	background-position: center;
+width: 18rem;
+margin: 20px;
+	
+		}
 	}
-}
+	}
+
 
 
 @media (min-width: 576px) {
@@ -139,12 +142,14 @@ header.hero-img {
 		font-size: 18px;
 	}
 
-	.card-img-top {
-		margin-bottom: 15px;
-		width: 20vw;
-		background-size: cover;
-		background-position: center;
-		}
+	// .card-img-top {
+	// 	margin-bottom: 15px;
+	// 	width: 30vw;
+	// 	// background-size: cover;
+	// 	// background-position: center;
+	// 	object-fit: cover;
+	
+	// 	}
 }
 
 
