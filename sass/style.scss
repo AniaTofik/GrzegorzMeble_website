@@ -109,7 +109,16 @@ header.hero-img {
 		letter-spacing: 1px;
 		padding-top: 10px;
 	}
-
+	.link {
+		font-weight: bold;
+		text-transform: uppercase;
+		a {
+			text-decoration: none;
+			color:$dark-brown;
+			text-decoration-line: underline;
+			cursor: pointer;
+		}
+	}
 }
 
 .offers-hero {

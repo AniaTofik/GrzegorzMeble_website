@@ -103,6 +103,16 @@ header.hero-img .btn:hover {
   letter-spacing: 1px;
   padding-top: 10px;
 }
+.about-me .link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-me .link a {
+  text-decoration: none;
+  color: #3f3a3a;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
 
 .offers-hero {
   position: relative;
