@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +18,14 @@ body {
 .section-title {
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.underline {
+  width: 15%;
+  height: 3px;
+  margin-bottom: 40px;
+  background-color: #3f3a3a;
 }
 
 nav {
@@ -56,6 +65,7 @@ header.hero-img h1 {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: lighter;
+  margin-bottom: 20px;
 }
 header.hero-img .hero-shadow {
   position: absolute;
@@ -63,7 +73,7 @@ header.hero-img .hero-shadow {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -5;
 }
 header.hero-img .hero-text {
@@ -83,14 +93,45 @@ header.hero-img .btn:hover {
 }
 
 .about-me {
-  background: linear-gradient(90deg, rgb(243, 234, 232) 0%, rgb(203, 195, 193) 0%, rgba(168, 161, 160, 0.7567401961) 0%, rgb(239, 230, 228) 22%, rgb(233, 224, 223) 27%, rgb(184, 176, 175) 100%, rgb(136, 130, 129) 100%, rgb(63, 58, 58) 100%);
   color: #3f3a3a;
+  text-align: center;
+}
+.about-me .title {
+  font-size: 20px;
 }
 .about-me .text {
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #3f3a3a;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+.offers-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/meble Grześ/8f09cfa7-f66e-4edb-adcc-e2bdd12fca3f.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #f3eae8;
+  z-index: 0;
+}
+.offers-hero .offers-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+.offers-hero .offers-hero-item {
+  margin: 12px 0;
+}
+.offers-hero .offers-hero-item i {
+  font-size: 36px;
+}
+.offers-hero .offers-hero-item .offers-hero-title {
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
 .portfolio {
@@ -98,7 +139,7 @@ header.hero-img .btn:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(90deg, rgb(243, 234, 232) 0%, rgb(239, 230, 228) 0%, rgb(203, 195, 193) 0%, rgb(184, 176, 175) 0%, rgba(168, 161, 160, 0.7567401961) 0%, rgb(136, 130, 129) 9%, rgb(63, 58, 58) 52%);
+  background: #3f3a3a;
   padding: 20px;
 }
 .portfolio .portfolio.card {

@@ -20,6 +20,13 @@ body {
 .section-title {
 	text-align: center;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.underline {
+	width: 15%;
+	height: 3px;
+	margin-bottom: 40px;
+	background-color: $dark-brown;
 }
 
 nav {
@@ -62,6 +69,7 @@ header.hero-img {
 		text-transform: uppercase;
 		font-size: 22px;
 		font-weight: lighter;
+		margin-bottom: 20px;
 	}
 
 	.hero-shadow {
@@ -70,7 +78,7 @@ header.hero-img {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(0, 0, 0, 0.7);
+		background-color: rgb(0, 0, 0, 0.6);
 		z-index: -5;
 	}
 
@@ -92,13 +100,47 @@ header.hero-img {
 }
 
 .about-me {
-	background: $bg-light;
 	color:$dark-brown;
+	text-align: center;
+	.title {
+		font-size: 20px;
+	}
 	.text {
-		padding: 10px;
-		text-align: center;
-		text-transform: uppercase;
-		color:$dark-brown;
+		letter-spacing: 1px;
+		padding-top: 10px;
+	}
+
+}
+
+.offers-hero {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/meble Grześ/8f09cfa7-f66e-4edb-adcc-e2bdd12fca3f.jpg');
+	background-size: cover;
+	background-position: center;
+	color: $light-brown;
+	z-index: 0;
+
+	.offers-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+	.offers-hero-item {
+		margin: 12px 0;
+
+		i {
+			font-size: 36px;
+		}
+		.offers-hero-title {
+			font-size: 18px;
+			letter-spacing: 2px;
+		}
 	}
 }
 
@@ -107,7 +149,7 @@ header.hero-img {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: $bg-dark;
+	background: $dark-brown;
 	padding: 20px;
 
 .portfolio.card {
@@ -141,15 +183,6 @@ margin: 20px;
 	p {
 		font-size: 18px;
 	}
-
-	// .card-img-top {
-	// 	margin-bottom: 15px;
-	// 	width: 30vw;
-	// 	// background-size: cover;
-	// 	// background-position: center;
-	// 	object-fit: cover;
-	
-	// 	}
 }
 
 
