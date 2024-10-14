@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: linear-gradient(90deg, rgb(243, 234, 232) 0%, rgb(203, 195, 193) 0%, rgba(168, 161, 160, 0.7567401961) 0%, rgb(239, 230, 228) 22%, rgb(233, 224, 223) 27%, rgb(184, 176, 175) 100%, rgb(136, 130, 129) 100%, rgb(63, 58, 58) 100%);
+  background-color: #e2d6d4;
   color: #f3eae8;
 }
 
@@ -87,7 +87,7 @@ header.hero-img .btn {
   font-weight: 600;
 }
 header.hero-img .btn:hover {
-  background-color: linear-gradient(90deg, rgb(243, 234, 232) 0%, rgb(203, 195, 193) 0%, rgba(168, 161, 160, 0.7567401961) 0%, rgb(239, 230, 228) 22%, rgb(233, 224, 223) 27%, rgb(184, 176, 175) 100%, rgb(136, 130, 129) 100%, rgb(63, 58, 58) 100%);
+  background-color: #e2d6d4;
   color: #201c1c;
 }
 
@@ -132,17 +132,16 @@ header.hero-img .btn:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #f3eae8;
+  text-align: center;
+  background: #e2d6d4;
   color: #201c1c;
   padding: 20px;
 }
-.portfolio .portfolio.card img {
-  width: 200px;
-  height: 300px;
+.portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
+  width: 300px;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 
 .contact {
@@ -173,6 +172,13 @@ header.hero-img .btn:hover {
   p {
     font-size: 18px;
   }
+  .portfolio {
+    padding: 20px;
+  }
+  .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
+    width: 400px;
+    height: 450px;
+  }
 }
 @media (min-width: 768px) {
   nav .navbar-brand {
@@ -183,5 +189,27 @@ header.hero-img .btn:hover {
   }
   p {
     font-size: 20px;
+  }
+  .portfolio {
+    padding: 20px;
+  }
+  .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
+    width: 350px;
+    height: 400px;
+    padding: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
+    width: 450px;
+    height: 500px;
+    padding: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
+    width: 400px;
+    height: 500px;
+    padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
