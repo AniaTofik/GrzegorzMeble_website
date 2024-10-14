@@ -136,12 +136,13 @@ header.hero-img .btn:hover {
   color: #201c1c;
   padding: 20px;
 }
-.portfolio .portfolio.card {
-  margin: 20px;
-}
-.portfolio .portfolio.card .card-img-top {
-  width: 18rem;
-  margin: 20px;
+.portfolio .portfolio.card img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .contact {

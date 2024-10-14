@@ -145,13 +145,11 @@ header.hero-img {
 	color: $dark-brown;
 	padding: 20px;
 
-.portfolio.card {
-	margin: 20px;
-	.card-img-top {
-	width: 18rem;
-	margin: 20px;
-	
-		}
+.portfolio.card img {
+	width: 200px;
+	height: 300px;
+	object-fit: cover;
+	object-fit: scale-down;
 	}
 	}
 
