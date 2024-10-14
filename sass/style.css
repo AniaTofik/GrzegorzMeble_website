@@ -198,6 +198,16 @@ header.hero-img .btn:hover {
     height: 400px;
     padding: 15px;
   }
+  .offers-hero .offers-hero-item {
+    margin: 14px auto;
+  }
+  .offers-hero .offers-hero-item .offers-hero-title {
+    font-size: 22px;
+  }
+  .offers-hero .offers-hero-item .offers-hero-item-text {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
 }
 @media (min-width: 992px) {
   .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {

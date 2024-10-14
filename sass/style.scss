@@ -217,6 +217,19 @@ header.hero-img {
 			padding: 15px;
 	}
 		}
+		.offers-hero {
+			.offers-hero-item {
+				margin: 14px auto;
+		
+				.offers-hero-title {
+					font-size: 22px;
+				}
+				.offers-hero-item-text{
+					font-size: 30px;
+					letter-spacing: 2px;
+				}
+			}
+		}
 }
 
 @media (min-width: 992px) {
