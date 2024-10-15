@@ -21,7 +21,7 @@ body {
 }
 
 .underline {
-  width: 15%;
+  width: 30%;
   height: 3px;
   margin-bottom: 40px;
   background-color: #201c1c;
@@ -103,14 +103,19 @@ header.hero-img .btn:hover {
   padding-top: 10px;
 }
 .about-me .link {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .about-me .link a {
   text-decoration: none;
   color: #201c1c;
-  text-decoration-line: underline;
   cursor: pointer;
+}
+.about-me .underline-text {
+  width: 60%;
+  height: 3px;
+  margin-bottom: 40px;
+  background-color: #201c1c;
 }
 
 .offers-hero {
@@ -148,12 +153,20 @@ header.hero-img .btn:hover {
   background-color: #201c1c;
   color: #f3eae8;
 }
-.contact .underline {
-  background-color: #f3eae8;
-}
 .contact .text i {
   padding-right: 8px;
   font-size: 20px;
+}
+.contact .underline-footer {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 40px;
+  background-color: #e2d6d4;
+}
+.contact .footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
