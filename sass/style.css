@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #e2d6d4;
   color: hsl(60, 31%, 93%);
 }
@@ -48,13 +48,16 @@ nav .navbar-toggler {
   padding: 10px 20px;
   color: hsl(60, 31%, 93%);
   font-size: 22px;
+  letter-spacing: 1px;
 }
-nav .navbar-brand {
+nav .navbar-logo {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   color: hsl(60, 31%, 93%);
+  text-decoration: none;
 }
-nav .navbar-brand:hover {
+nav .navbar-logo:hover {
   color: hsl(60, 31%, 93%);
   text-decoration-line: underline;
   text-underline-offset: 8px;

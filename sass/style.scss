@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Roboto", sans-serif;
 	background-color: $bg-light;
 	color: $light-brown;
 }
@@ -49,18 +49,20 @@ nav {
 		padding: 10px 20px;
 		color: $light-brown;
 		font-size: 22px;
+		letter-spacing: 1px;
 	}
 
-	.navbar-brand {
+	.navbar-logo {
+		display: block;
 		font-weight: bold;
 		font-size: 16px;
 		color: $light-brown;
+		text-decoration: none;
 	}
-	.navbar-brand:hover {
+	.navbar-logo:hover {
 		color: $light-brown;
 		text-decoration-line: underline;
 		text-underline-offset: 8px;
-
 	}
 
 	a.nav-link {
