@@ -20,6 +20,14 @@ body {
 	background-color: rgba(43, 42, 42, 0.8);
 }
 
+.show {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
 .section-title {
 	text-align: center;
 	text-transform: uppercase;
@@ -48,11 +56,27 @@ nav {
 		font-size: 16px;
 		color: $light-brown;
 	}
+	.navbar-brand:hover {
+		color: $light-brown;
+		text-decoration-line: underline;
+		text-underline-offset: 8px;
+
+	}
+
 	a.nav-link {
 		color: $light-brown;
+		transition: color, text-decoration-line, .5s;
 	}
+
+	a.nav-link:hover {
+		color: $light-brown;
+		text-decoration-line: underline;
+		text-underline-offset: 8px;
+
+	}
+
 	.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-		color: white;
+		color: rgb(248, 243, 243);
 	}
 }
 
@@ -95,6 +119,8 @@ header.hero-img {
 	.btn {
 	color: $light-brown;
 	font-weight: 600;
+	letter-spacing: 1px;
+	transition: background-color, color, .5s;
 	}
 	.btn:hover {
 		background-color: $bg-light;
@@ -121,12 +147,17 @@ header.hero-img {
 			cursor: pointer;
 		}
 	}
-	.underline-text {
-		width: 60%;
-		height: 3px;
-		margin-bottom: 40px;
-		background-color: $dark-brown;
-	}
+	.btn {
+		color: $dark-brown;
+		font-weight: 600;
+		letter-spacing: 1px;
+		transition: background-color, color, .5s;
+		}
+
+		.btn:hover {
+			background-color: $bg-dark;
+			color: $light-brown;
+		}
 }
 
 .offers-hero {

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const btnMenu= document.querySelector('.navbar-toggler');
 
 	function addShadow() {
-		if (window.scrollY >= 1500) {
+		if (window.scrollY >= 100) {
 			nav.classList.add('shadow-bg');
 		} else {
 			nav.classList.remove('shadow-bg');
@@ -14,15 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	navLinks.forEach((navLink) =>
 		navLink.addEventListener('click', () => {
-			navCollapse.classList.remove('show'); // Usuwa klasę show
+			navCollapse.classList.remove('show'); 
+			navCollapse.classList.add('hidden'); 
 		})
 	);
 	
-	function closeNav() {
-		navCollapse.classList.remove('show'); 
-	}
-	
-	btnMenu.addEventListener('click', closeNav);
+	function toggleNavMenu() {
+		if (navCollapse.classList.contains('hidden')) {
+		  navCollapse.classList.remove('hidden'); 
+		  navCollapse.classList.add('show'); 
+		} else if (navCollapse.classList.contains('show')) {
+		  navCollapse.classList.remove('show');
+		  navCollapse.classList.add('hidden');
+		}
+	  }
+	  
+	  btnMenu.addEventListener('click', toggleNavMenu);
+	  
 	
 	window.addEventListener('scroll', addShadow);
 });

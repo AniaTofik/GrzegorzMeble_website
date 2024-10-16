@@ -11,11 +11,19 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #e2d6d4;
-  color: #f3eae8;
+  color: hsl(60, 31%, 93%);
 }
 
 .shadow-bg {
   background-color: rgba(43, 42, 42, 0.8);
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .section-title {
@@ -38,26 +46,37 @@ nav {
 }
 nav .navbar-toggler {
   padding: 10px 20px;
-  color: #f3eae8;
+  color: hsl(60, 31%, 93%);
   font-size: 22px;
 }
 nav .navbar-brand {
   font-weight: bold;
   font-size: 16px;
-  color: #f3eae8;
+  color: hsl(60, 31%, 93%);
+}
+nav .navbar-brand:hover {
+  color: hsl(60, 31%, 93%);
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
 }
 nav a.nav-link {
-  color: #f3eae8;
+  color: hsl(60, 31%, 93%);
+  transition: color, text-decoration-line, 0.5s;
+}
+nav a.nav-link:hover {
+  color: hsl(60, 31%, 93%);
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
 }
 nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link.show {
-  color: white;
+  color: rgb(248, 243, 243);
 }
 
 header.hero-img {
   position: relative;
   height: 100vh;
   font-size: 16px;
-  color: #f3eae8;
+  color: hsl(60, 31%, 93%);
   background-image: url("../img/furniture-998265_1920.jpg");
   background-size: cover;
   background-position: 40%;
@@ -87,8 +106,10 @@ header.hero-img .hero-text {
   height: 100%;
 }
 header.hero-img .btn {
-  color: #f3eae8;
+  color: hsl(60, 31%, 93%);
   font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color, color, 0.5s;
 }
 header.hero-img .btn:hover {
   background-color: #e2d6d4;
@@ -115,18 +136,22 @@ header.hero-img .btn:hover {
   color: #201c1c;
   cursor: pointer;
 }
-.about-me .underline-text {
-  width: 60%;
-  height: 3px;
-  margin-bottom: 40px;
-  background-color: #201c1c;
+.about-me .btn {
+  color: #201c1c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color, color, 0.5s;
+}
+.about-me .btn:hover {
+  background-color: linear-gradient(90deg, rgb(243, 234, 232) 0%, rgb(239, 230, 228) 0%, rgb(203, 195, 193) 0%, rgb(184, 176, 175) 0%, rgba(168, 161, 160, 0.7567401961) 0%, rgb(136, 130, 129) 9%, rgb(63, 58, 58) 52%);
+  color: hsl(60, 31%, 93%);
 }
 
 .offers-hero {
   background-color: #201c1c;
 }
 .offers-hero .underline {
-  background-color: #f3eae8;
+  background-color: hsl(60, 31%, 93%);
 }
 .offers-hero .offers-hero-item {
   margin: 12px 0;
@@ -155,7 +180,7 @@ header.hero-img .btn:hover {
 
 .contact {
   background-color: #201c1c;
-  color: #f3eae8;
+  color: hsl(60, 31%, 93%);
 }
 .contact .text i {
   padding-right: 8px;
