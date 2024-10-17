@@ -12,7 +12,6 @@ html {
 
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: $bg-light;
 	color: $light-brown;
 }
 
@@ -35,7 +34,7 @@ body {
 }
 .underline {
 	width: 30%;
-	height: 3px;
+	height: 2px;
 	margin-bottom: 40px;
 	background-color: $dark-brown;
 }
@@ -130,7 +129,6 @@ header.hero-img {
 	transition: background-color, color, .5s;
 	}
 	.btn:hover {
-		background-color: $bg-light;
 	color: $dark-brown;
 	}
 }
@@ -159,10 +157,10 @@ header.hero-img {
 		font-weight: 600;
 		letter-spacing: 1px;
 		transition: background-color, color, .5s;
+		border:2px solid $dark-brown;
 		}
 
 		.btn:hover {
-			background-color: $bg-dark;
 			color: $light-brown;
 		}
 }
@@ -188,7 +186,6 @@ header.hero-img {
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
-	background: $bg-light;
 	color: $dark-brown;
 	padding: 20px;
 
@@ -196,6 +193,13 @@ header.hero-img {
 	width: 300px;
 		height: 350px;
 		object-fit: cover;
+}
+
+.carousel-item {
+img{
+	height: 450px;
+	object-fit: cover;
+}
 }
 	}
 
@@ -211,7 +215,7 @@ header.hero-img {
 	.underline-footer {
 		width: 100%;
 		height: 1px;
-		background-color: $bg-light;
+		background-color: white;
 	}
 }	
 
