@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const btnMenu= document.querySelector('.navbar-toggler');
 
 	function addShadow() {
-		if (window.scrollY >= 100) {
+		if (window.scrollY >= 0) {
 			nav.classList.add('shadow-bg');
 		} else {
 			nav.classList.remove('shadow-bg');
