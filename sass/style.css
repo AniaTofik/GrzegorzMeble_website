@@ -1,3 +1,53 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.8s ease-out;
+}
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s ease-out;
+}
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-top {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.8s ease-out;
+}
+.slide-in-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-bottom {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.slide-in-bottom.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +56,8 @@
 
 html {
   scroll-padding-top: 74px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,13 +87,17 @@ body {
   width: 30%;
   height: 2px;
   margin-bottom: 40px;
-  background-color: #201c1c;
+  background-color: #c2a477;
 }
 
 nav {
   text-transform: uppercase;
   z-index: 5;
   transition: background-color 0.6;
+}
+nav span {
+  font-size: 22px;
+  color: #c2a477;
 }
 nav .navbar-toggler {
   padding: 10px 20px;
@@ -71,12 +127,12 @@ nav a.nav-link {
   transition: color, text-decoration-line, 0.5s;
 }
 nav a.nav-link:hover {
-  color: hsl(60, 31%, 93%);
+  color: #c2a477;
   text-decoration-line: underline;
   text-underline-offset: 8px;
 }
 nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link.show {
-  color: rgb(248, 243, 243);
+  color: #c2a477;
 }
 
 header.hero-img {
@@ -112,8 +168,12 @@ header.hero-img .hero-text {
   flex-direction: column;
   height: 100%;
 }
+header.hero-img .hero-text h1 {
+  color: #c2a477;
+}
 header.hero-img .btn {
-  color: hsl(60, 31%, 93%);
+  color: white;
+  background-color: #c2a477;
   font-weight: 600;
   letter-spacing: 1px;
   transition: background-color, color, 0.5s;
@@ -123,48 +183,85 @@ header.hero-img .btn:hover {
 }
 
 .about-me {
-  color: #201c1c;
   text-align: center;
+  background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
+  color: #333;
 }
-.about-me .title {
-  font-size: 20px;
+.about-me .section-title {
+  font-family: "Poppins", sans-serif;
+  color: #444;
 }
-.about-me .text {
-  letter-spacing: 1px;
-  padding-top: 10px;
-}
-.about-me .link {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.about-me .link a {
-  text-decoration: none;
-  color: #201c1c;
-  cursor: pointer;
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
 }
 .about-me .btn {
-  color: #201c1c;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: background-color, color, 0.5s;
-  border: 2px solid #201c1c;
+  background-color: #c2a477;
+  border-color: #c2a477;
+  color: #fff;
 }
 .about-me .btn:hover {
-  color: hsl(60, 31%, 93%);
+  background-color: #b89560;
+}
+.about-me .link a {
+  color: #b89560;
+  font-weight: bold;
+}
+.about-me .link a:hover {
+  color: #99744d;
+}
+
+.offers-hero {
+  background: #333;
+  color: #f5f5f5;
+}
+.offers-hero .section-title {
+  font-family: "Poppins", sans-serif;
+  color: #f5f5f5;
+}
+.offers-hero .offers-hero-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s ease-out;
+  transition-delay: 0.1s;
+}
+.offers-hero .offers-hero-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.offers-hero .offers-hero-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.offers-hero .offers-hero-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.offers-hero .offers-hero-title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.offers-hero:hover {
+  background-color: #555;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.offers-hero-item-text {
+  color: #f5a623;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .offers-hero {
   background-color: #201c1c;
-}
-.offers-hero .underline {
-  background-color: hsl(60, 31%, 93%);
-}
-.offers-hero .offers-hero-item {
-  margin: 12px 0;
-}
-.offers-hero .offers-hero-item .offers-hero-title {
-  font-size: 18px;
-  letter-spacing: 1px;
 }
 
 .portfolio {
@@ -194,6 +291,7 @@ header.hero-img .btn:hover {
 .footer .text i {
   padding-right: 10px;
   font-size: 22px;
+  color: #c2a477;
 }
 .footer .underline-footer {
   width: 100%;

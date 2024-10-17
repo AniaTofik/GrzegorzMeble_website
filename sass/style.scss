@@ -1,4 +1,5 @@
 @use './colors' as *;
+@use './animations' as *;
 
 * {
 	box-sizing: border-box;
@@ -8,6 +9,8 @@
 
 html {
 	scroll-padding-top: 74px;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -36,13 +39,18 @@ body {
 	width: 30%;
 	height: 2px;
 	margin-bottom: 40px;
-	background-color: $dark-brown;
+	background-color: $orange;
 }
+  
 
 nav {
 	text-transform: uppercase;
 	z-index: 5;
 	transition: background-color 0.6;
+	span {
+		font-size: 22px;
+		color:$orange;
+	}
 
 	.navbar-toggler {
 		padding: 10px 20px;
@@ -75,14 +83,14 @@ nav {
 	}
 
 	a.nav-link:hover {
-		color: $light-brown;
+		color: $orange;
 		text-decoration-line: underline;
 		text-underline-offset: 8px;
 
 	}
 
 	.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-		color: rgb(248, 243, 243);
+		color: $orange;
 	}
 }
 
@@ -121,9 +129,13 @@ header.hero-img {
 		align-items: center;
 		flex-direction: column;
 		height: 100%;
+		h1 {
+			color:$orange;
+		}
 	}
 	.btn {
-	color: $light-brown;
+	color: white;
+	background-color: $orange;
 	font-weight: 600;
 	letter-spacing: 1px;
 	transition: background-color, color, .5s;
@@ -134,50 +146,99 @@ header.hero-img {
 }
 
 .about-me {
-	color:$dark-brown;
 	text-align: center;
-	.title {
-		font-size: 20px;
+	background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
+	color: #333;
+  
+	.section-title {
+	  font-family: 'Poppins', sans-serif;
+	  color: #444;
 	}
-	.text {
-		letter-spacing: 1px;
-		padding-top: 10px;
+  
+	p {
+	  font-size: 1.1rem;
+	  line-height: 1.8;
+	  color: #666;
 	}
-	.link {
-		font-weight: 700;
-		text-transform: uppercase;
-		a {
-			text-decoration: none;
-			color:$dark-brown;
-			cursor: pointer;
-		}
-	}
+  
 	.btn {
-		color: $dark-brown;
-		font-weight: 600;
-		letter-spacing: 1px;
-		transition: background-color, color, .5s;
-		border:2px solid $dark-brown;
+	  background-color: $orange;
+	  border-color: $orange;
+	  color: #fff;
+  
+	  &:hover {
+		background-color: #b89560;
+	  }
+	}
+  
+	.link a {
+	  color: #b89560;
+	  font-weight: bold;
+  
+	  &:hover {
+		color: #99744d;
+	  }
+	}
+  }
+  
+  .offers-hero {
+	background: #333;
+	color: #f5f5f5;
+  
+	.section-title {
+	  font-family: 'Poppins', sans-serif;
+	  color: #f5f5f5;
+	}
+  
+	.offers-hero-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  	background-color: #444;
+	  	padding: 20px;
+	  	margin-bottom: 25px;
+	  	border-radius: 8px;
+		  opacity: 0;
+		  transform: translateX(30px);
+		  transition: all 0.8s ease-out;
+		  transition-delay: 0.1s;
+
+		  &.visible {
+			opacity: 1;
+			transform: translateX(0);
+		  }
+		
+		  &:nth-child(2) {
+			transition-delay: 0.2s;
+		  }
+		
+		  &:nth-child(3) {
+			transition-delay: 0.3s;
+		  }
 		}
 
-		.btn:hover {
-			color: $light-brown;
+		  .offers-hero-title {
+			font-size: 18px;
+			letter-spacing: 1px;
+			margin: 0;
 		}
-}
+  
+	  &:hover {
+		background-color: #555;
+		transform: scale(1.05);
+		transition: all 0.3s ease-in-out;
+	  }
+	}
+  
+	.offers-hero-item-text {
+	  color: #f5a623;
+	  font-weight: bold;
+	  letter-spacing: 1px;
+	}
+  
 
 .offers-hero {
 	background-color: $dark-brown;
-	.underline {
-		background-color: $light-brown;
-	}
-	.offers-hero-item {
-		margin: 12px 0;
-
-		.offers-hero-title {
-			font-size: 18px;
-			letter-spacing: 1px;
-		}
-	}
 }
 
 .portfolio {
@@ -209,6 +270,7 @@ img{
 		i {
 			padding-right: 10px;
 			font-size: 22px;
+			color: $orange;
 			
 		}
 	}
