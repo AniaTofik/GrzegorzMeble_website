@@ -189,7 +189,6 @@ header.hero-img .btn:hover {
 
 .about-us {
   background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
-  padding: 60px 20px;
   text-align: center;
   color: #333;
   animation: fadeIn 1s ease-in-out;
@@ -239,7 +238,6 @@ header.hero-img .btn:hover {
 .offers-hero {
   background: #333;
   color: #f5f5f5;
-  padding: 40px 20px;
 }
 .offers-hero .section-title {
   font-family: "Poppins", sans-serif;
@@ -326,7 +324,6 @@ header.hero-img .btn:hover {
 .why-us {
   background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
   color: #333;
-  padding: 60px 20px;
   text-align: center;
 }
 
