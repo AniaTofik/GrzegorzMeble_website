@@ -60,6 +60,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   color: hsl(60, 31%, 93%);
   overflow-x: hidden;
@@ -186,40 +187,46 @@ header.hero-img .btn:hover {
   color: #201c1c;
 }
 
-.about-me {
-  text-align: center;
+.about-us {
   background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
+  padding: 60px 20px;
+  text-align: center;
   color: #333;
-}
-.about-me .section-title {
-  font-family: "Poppins", sans-serif;
-  color: #444;
-}
-.about-me p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #666;
-}
-.about-me .btn {
-  background-color: #c2a477;
-  border-color: #c2a477;
-  color: #fff;
-}
-.about-me .btn:hover {
-  background-color: #b89560;
-}
-.about-me .link a {
-  color: #b89560;
-  font-weight: bold;
-}
-.about-me .link a:hover {
-  color: #99744d;
-}
-
-Animacja fade-in .about-me {
   animation: fadeIn 1s ease-in-out;
 }
-
+.about-us .section-title {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.about-us p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #666;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.about-us .highlight {
+  color: #c2a477;
+  font-weight: bold;
+}
+.about-us .about-us-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #444;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 30px;
+}
+.about-us .about-us-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -228,13 +235,30 @@ Animacja fade-in .about-me {
     opacity: 1;
   }
 }
+
 .offers-hero {
   background: #333;
   color: #f5f5f5;
+  padding: 40px 20px;
 }
 .offers-hero .section-title {
   font-family: "Poppins", sans-serif;
   color: #f5f5f5;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.offers-hero .link {
+  text-align: center;
+  color: #c2a477; /* Zastosowanie koloru $orange */
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.offers-hero .link span {
+  font-size: 25px;
+}
+.offers-hero .link:hover {
+  color: #99744d;
 }
 .offers-hero .offers-hero-item {
   display: flex;
@@ -274,17 +298,12 @@ Animacja fade-in .about-me {
   letter-spacing: 1px;
   margin: 0;
 }
-
-.offers-hero-item-text {
+.offers-hero .offers-hero-item-text {
   margin-top: 20px;
   font-size: 20px;
   color: #f5a623;
   font-weight: bold;
   letter-spacing: 1px;
-}
-
-.offers-hero {
-  background-color: #201c1c;
 }
 
 .portfolio {
@@ -303,12 +322,69 @@ Animacja fade-in .about-me {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.portfolio .carousel-item img {
-  height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+
+.why-us {
+  background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
+  color: #333;
+  padding: 60px 20px;
+  text-align: center;
 }
 
+.section-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #444;
+  margin-bottom: 25px;
+  font-weight: bold;
+  position: relative;
+}
+
+.why-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.why-us-item {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 0 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  transition: transform 0.3s ease;
+}
+
+.why-us-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.why-us-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.why-us-item:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .why-us-item {
+    flex: 0 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+@media (max-width: 480px) {
+  .why-us-item {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+}
 .footer {
   background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
   color: #333;
