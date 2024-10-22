@@ -36,12 +36,16 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
+	color: #333;
+	font-size: 20px;
+			margin-bottom: 20px;
 }
 .underline {
-	width: 30%;
+	width: 40%;
 	height: 2px;
 	margin-bottom: 40px;
 	background-color: $orange;
+	margin: auto;
 }
   
 
@@ -89,9 +93,7 @@ nav {
 		color: $orange;
 		text-decoration-line: underline;
 		text-underline-offset: 8px;
-
 	}
-
 	.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
 		color: $orange;
 	}
@@ -102,11 +104,10 @@ header.hero-img {
 	height: 100vh;
 	font-size: 16px;
 	color: $light-brown;
-	background-image: url('../img/IMG-20210502-WA0000.jpg');
-	background-size: auto;
+	background-image: url('../img/furniture-998265_1920.jpg');
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-
 	z-index: 0;
 
 	h1{
@@ -125,7 +126,7 @@ header.hero-img {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(0, 0, 0, 0.6);
+		background-color: rgb(0, 0, 0, 0.5);
 		z-index: -5;
 	}
 
@@ -151,86 +152,84 @@ header.hero-img {
 	}
 }
 
+// about-us section
 .about-us {
-	background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8); // Spójność z sekcją "O mnie"
-	text-align: center;
-	color: #333;
-  
-	.section-title {
-	  font-family: 'Poppins', sans-serif;
-	  color: #444;
-	  font-size: 25px;
+	background: linear-gradient(to bottom right, #fff, #f9f5f0); /* Jasny gradient */
+	p {
+	  font-size: 1rem;
+	  color: #555;
+	  line-height: 1.8;
 	  margin-bottom: 20px;
 	}
-  
-	p {
-	  font-size: 1.2rem;
-	  line-height: 1.8;
-	  color: #666;
-	  max-width: 800px;
-	  margin: 20px auto;
-	}
-  
-	.highlight {
-	  color: #c2a477; // Użycie koloru akcentowego dla ważnych słów
-	  font-weight: bold;
-	}
-  
-	.about-us-button {
-	  display: inline-block;
-	  padding: 15px 30px;
-	  background-color: #444;
-	  color: #f5f5f5;
-	  text-decoration: none;
-	  font-size: 1rem;
-	  font-weight: bold;
-	  border-radius: 8px;
-	  transition: background-color 0.3s ease-in-out;
-	  margin-top: 30px;
-  
-	  &:hover {
-		background-color: #555;
-		transform: scale(1.05);
-	  }
-	}
-  
-	// Fade-in animation for smooth appearance
-	animation: fadeIn 1s ease-in-out;
-  
-	@keyframes fadeIn {
-	  from {
-		opacity: 0;
-	  }
-	  to {
-		opacity: 1;
-	  }
+	.background-box {
+	  background-color: white;
+	  border-left: 3px solid $orange;
+	  padding: 20px;
+	  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	}
   }
   
+  /* Animacja */
+  @keyframes fadeInUp {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  @keyframes fadeInFromLeft {
+	from {
+	  opacity: 0;
+	  transform: translateX(-20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes fadeInFromLeft {
+	from {
+	  opacity: 0;
+	  transform: translateX(-20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes slideIn {
+	from {
+	  opacity: 0;
+	  transform: translateX(-50px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+//   offers section
 	.offers-hero {
-		background: #333;
-		color: #f5f5f5;
-	
-		.section-title {
-			font-family: 'Poppins', sans-serif;
-			color: #f5f5f5;
-			font-size: 25px;
-			margin-bottom: 20px;
-		}
+		color: #fff;
+		background-color: #333;
+		text-align: center;
+		font-family: 'Poppins', sans-serif;
 	
 		.link {
 			text-align: center;
-			color: #c2a477; /* Zastosowanie koloru $orange */
+			color: $orange; 
 			font-weight: bold;
 			letter-spacing: 1px;
 			margin-bottom: 30px;
 	
 			span {
-				font-size: 25px;
-			}
-	
-			&:hover {
-				color: #99744d;
+				font-size: 18px;
+				text-transform: uppercase;
 			}
 		}
 	  
@@ -238,10 +237,11 @@ header.hero-img {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background-color: #444;
+			background-color: #555;
 			padding: 20px;
 			margin-bottom: 25px;
 			border-radius: 8px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 			opacity: 0;
 			transform: translateX(30px);
 			transition: all 0.8s ease-out;
@@ -249,7 +249,7 @@ header.hero-img {
 			cursor: pointer;
 	
 			a {
-				color: #f5f5f5;
+				color: white;
 				text-decoration: none;
 			}
 	
@@ -268,8 +268,12 @@ header.hero-img {
 	  
 			&:hover {
 				background-color: #555;
+				color: white;
 				transform: scale(1.05);
 				transition: all 0.3s ease-in-out;
+			}
+			a:hover{
+				color:white;
 			}
 		}
 	  
@@ -280,7 +284,7 @@ header.hero-img {
 		}
 	  
 		.offers-hero-item-text {
-			margin-top: 20px;
+			padding: 0 15px;
 			font-size: 20px;
 			color: #f5a623;
 			font-weight: bold;
@@ -306,19 +310,11 @@ header.hero-img {
 
 }
 .why-us {
-	background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
-	color: #333;
+	background: linear-gradient(to bottom right, #fff, #f9f5f0); /* Jasny gradient */
+	color: #555;
 	text-align: center;
   }
   
-  .section-title h2 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 25px;
-	color: #444;
-	margin-bottom: 25px;
-	font-weight: bold;
-	position: relative;
-  }
   
   .why-us-content {
 	display: flex;
@@ -370,8 +366,11 @@ header.hero-img {
   
 
 .footer {
-    background: linear-gradient(to bottom right, #f5f5f5, #e8e8e8);
-    color: #333;
+    color: #fff;
+    background-color: #333;
+	h2 {
+		color: white;
+	}
 
     .text {
         i {
@@ -379,12 +378,6 @@ header.hero-img {
             font-size: 22px;
             color: $orange;
         }
-    }
-
-    .underline-footer {
-        width: 100%;
-        height: 1px;
-        background-color: $orange; 
     }
 }
 
