@@ -338,6 +338,58 @@ header.hero-img {
 }
 
 @media (max-width: 768px) {
+	nav {
+		span {
+			font-size: 26px;
+		}
+	
+		.navbar-toggler {
+			
+			padding: 20px 30px;
+			font-size: 24px;
+			letter-spacing: 1px;
+		}
+	
+		.navbar-logo {
+			display: block;
+			font-weight: bold;
+			font-size: 16px;
+			color: $light-brown;
+			text-decoration: none;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+	
+		.navbar-logo:hover {
+			color: $light-brown;
+			text-decoration-line: underline;
+			text-underline-offset: 8px;
+		}
+	
+		.navbar-nav {
+			background-color: rgba(43, 42, 42, 0.9);
+		}
+	
+		a.nav-link {
+			color: $light-brown;
+			transition: color, text-decoration-line, .5s;
+		}
+	
+		a.nav-link:hover {
+			color: $orange;
+			text-decoration-line: underline;
+			text-underline-offset: 8px;
+		}
+	
+		.navbar-nav .nav-link.active,
+		.navbar-nav .nav-link.show {
+			color: $orange;
+		}
+	}
+
+
+
+
 	.why-us-item {
 	  flex: 0 1 calc(50% - 40px);
 	  max-width: calc(50% - 40px);
