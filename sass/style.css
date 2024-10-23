@@ -1,51 +1,30 @@
-.fade-in {
+@charset "UTF-8";
+.fade-in,
+.slide-in-left,
+.slide-in-right,
+.slide-in-top {
   opacity: 0;
-  transform: translateY(20px);
   transition: all 0.8s ease-out;
 }
-.fade-in.visible {
+.fade-in.visible,
+.slide-in-left.visible,
+.slide-in-right.visible,
+.slide-in-top.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(0, 0);
+}
+
+.fade-in,
+.slide-in-top {
+  transform: translateY(20px);
 }
 
 .slide-in-left {
-  opacity: 0;
   transform: translateX(-30px);
-  transition: all 0.8s ease-out;
-}
-.slide-in-left.visible {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .slide-in-right {
-  opacity: 0;
   transform: translateX(30px);
-  transition: all 0.8s ease-out;
-}
-.slide-in-right.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.slide-in-top {
-  opacity: 0;
-  transform: translateY(-30px);
-  transition: all 0.8s ease-out;
-}
-.slide-in-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.slide-in-bottom {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-.slide-in-bottom.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 * {
@@ -61,13 +40,23 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  color: hsl(60, 31%, 93%);
+  font-family: "Poppins", sans-serif;
+  color: white;
   overflow-x: hidden;
 }
 
 .shadow-bg {
-  background-color: rgba(43, 42, 42, 0.8);
+  background-color: rgba(43, 42, 42, 0.9);
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
 }
 
 .show {
@@ -92,7 +81,7 @@ body {
   width: 40%;
   height: 2px;
   margin-bottom: 40px;
-  background-color: #c2a477;
+  background-color: rgb(190, 129, 14);
   margin: auto;
 }
 
@@ -103,11 +92,11 @@ nav {
 }
 nav span {
   font-size: 22px;
-  color: #c2a477;
+  color: rgb(190, 129, 14);
 }
 nav .navbar-toggler {
   padding: 10px 20px;
-  color: hsl(60, 31%, 93%);
+  color: white;
   font-size: 22px;
   letter-spacing: 1px;
 }
@@ -115,37 +104,38 @@ nav .navbar-logo {
   display: block;
   font-weight: bold;
   font-size: 16px;
-  color: hsl(60, 31%, 93%);
+  color: white;
   text-decoration: none;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 nav .navbar-logo:hover {
-  color: hsl(60, 31%, 93%);
+  color: white;
   text-decoration-line: underline;
   text-underline-offset: 8px;
 }
-nav .navnar-nav {
-  background-color: rgba(43, 42, 42, 0.8);
+nav .navbar-nav {
+  background-color: rgba(43, 42, 42, 0.9);
 }
 nav a.nav-link {
-  color: hsl(60, 31%, 93%);
+  color: white;
   transition: color, text-decoration-line, 0.5s;
 }
 nav a.nav-link:hover {
-  color: #c2a477;
+  color: rgb(190, 129, 14);
   text-decoration-line: underline;
   text-underline-offset: 8px;
 }
-nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link.show {
-  color: #c2a477;
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  color: rgb(190, 129, 14);
 }
 
 header.hero-img {
   position: relative;
   height: 100vh;
   font-size: 16px;
-  color: hsl(60, 31%, 93%);
+  color: white;
   background-image: url("../img/furniture-998265_1920.jpg");
   background-size: cover;
   background-position: center;
@@ -159,16 +149,7 @@ header.hero-img h1 {
   margin-bottom: 20px;
 }
 header.hero-img h1 span {
-  color: hsl(60, 31%, 93%);
-}
-header.hero-img .hero-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -5;
+  color: white;
 }
 header.hero-img .hero-text {
   display: flex;
@@ -178,21 +159,21 @@ header.hero-img .hero-text {
   height: 100%;
 }
 header.hero-img .hero-text h1 {
-  color: #c2a477;
+  color: rgb(190, 129, 14);
 }
 header.hero-img .btn {
   color: white;
-  background-color: #c2a477;
+  background-color: rgb(190, 129, 14);
   font-weight: 600;
   letter-spacing: 1px;
-  transition: background-color, color, 0.5s;
+  transition: background-color, 0.5s;
 }
 header.hero-img .btn:hover {
-  color: #201c1c;
+  background-color: #e4a112;
 }
 
 .about-us {
-  background: linear-gradient(to bottom right, #fff, #f9f5f0); /* Jasny gradient */
+  background: linear-gradient(to bottom right, #fff, #f9f5f0);
 }
 .about-us p {
   font-size: 1rem;
@@ -202,12 +183,11 @@ header.hero-img .btn:hover {
 }
 .about-us .background-box {
   background-color: white;
-  border-left: 3px solid #c2a477;
+  border-left: 3px solid rgb(190, 129, 14);
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Animacja */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -216,16 +196,6 @@ header.hero-img .btn:hover {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes fadeInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 @keyframes fadeInFromLeft {
@@ -249,14 +219,19 @@ header.hero-img .btn:hover {
   }
 }
 .offers-hero {
-  color: #fff;
-  background-color: #333;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
+  position: relative;
+  min-height: 60vh;
+  padding: 20px;
+  font-size: 16px;
+  background-image: url("../img/background wood.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-y: hidden;
+  z-index: 0;
 }
 .offers-hero .link {
   text-align: center;
-  color: #c2a477;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -264,24 +239,26 @@ header.hero-img .btn:hover {
 .offers-hero .link span {
   font-size: 18px;
   text-transform: uppercase;
+  color: rgb(190, 129, 14);
 }
 .offers-hero .offers-hero-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #555;
-  padding: 20px;
-  margin-bottom: 25px;
+  color: #555;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transform: translateX(30px);
-  transition: all 0.8s ease-out;
+  transition: background-color, transform 0.8s ease-out;
   transition-delay: 0.1s;
   cursor: pointer;
 }
 .offers-hero .offers-hero-item a {
-  color: white;
+  color: #555;
   text-decoration: none;
 }
 .offers-hero .offers-hero-item.visible {
@@ -295,46 +272,16 @@ header.hero-img .btn:hover {
   transition-delay: 0.3s;
 }
 .offers-hero .offers-hero-item:hover {
-  background-color: #555;
-  color: white;
+  background-color: white;
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-.offers-hero .offers-hero-item a:hover {
-  color: white;
-}
-.offers-hero .offers-hero-title {
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin: 0;
 }
 .offers-hero .offers-hero-item-text {
-  padding: 0 15px;
-  font-size: 20px;
-  color: #f5a623;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  color: #201c1c;
-  padding: 20px;
-}
-.portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
-  width: 400px;
-  max-width: 100%;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  font-size: 25px;
+  color: orange;
 }
 
 .why-us {
-  background: linear-gradient(to bottom right, #fff, #f9f5f0); /* Jasny gradient */
+  background: linear-gradient(to bottom right, #fff, #f9f5f0);
   color: #555;
   text-align: center;
 }
@@ -346,7 +293,7 @@ header.hero-img .btn:hover {
 }
 
 .why-us-item {
-  background-color: #fff;
+  background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
@@ -357,15 +304,16 @@ header.hero-img .btn:hover {
 }
 
 .why-us-item h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #444;
   margin-bottom: 10px;
 }
 
 .why-us-item p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.8;
   color: #666;
 }
 
@@ -386,102 +334,20 @@ header.hero-img .btn:hover {
   }
 }
 .footer {
+  position: relative;
   color: #fff;
-  background-color: #333;
-}
-.footer h2 {
-  color: white;
+  background-image: url("../img/DALL·E 2024-10-23 17.28.16 - A detailed close-up of a wood grain texture, showcasing natural lines, patterns, and knots typical of oak or ash wood. The wood has a light brown hue .webp");
+  padding: 10px;
+  font-size: 16px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
 .footer .text i {
   padding-right: 10px;
   font-size: 22px;
-  color: #c2a477;
+  color: rgb(190, 129, 14);
 }
-
-@media (min-width: 576px) {
-  nav .navbar-toggler {
-    font-size: 26px;
-  }
-  nav .navbar-brand {
-    font-size: 18px;
-  }
-  nav a.nav-link {
-    font-size: 20px;
-  }
-  header.hero-img h1 {
-    font-size: 32px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .offers-hero-item-text {
-    font-size: 25px;
-  }
-  .portfolio {
-    padding: 20px;
-  }
-  .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
-    width: 300px;
-    height: 350px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (min-width: 768px) {
-  nav .navbar-brand {
-    font-size: 22px;
-  }
-  header.hero-img h1 {
-    font-size: 42px;
-  }
-  p {
-    font-size: 20px;
-  }
-  .portfolio {
-    padding: 20px;
-  }
-  .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
-    width: 350px;
-    height: 400px;
-    padding: 15px;
-  }
-  .offers-hero .offers-hero-item {
-    margin: 14px auto;
-  }
-  .offers-hero .offers-hero-item .offers-hero-title {
-    font-size: 22px;
-  }
-  .offers-hero .offers-hero-item .offers-hero-item-text {
-    font-size: 30px;
-    letter-spacing: 2px;
-  }
-}
-@media (min-width: 992px) {
-  .offers-hero-item-text {
-    margin-top: 30px;
-    font-size: 35px;
-  }
-}
-.offers-hero-item-text {
-  color: #f5a623;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.offers-hero {
-  background-color: #201c1c;
-}
-
-.portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
-  width: 450px;
-  height: 500px;
-  padding: 10px;
-}
-
-@media (min-width: 1200px) {
-  .portfolio .card-img, .portfolio .card-img-bottom, .portfolio .card-img-top {
-    width: 400px;
-    height: 500px;
-    padding: 20px;
-  }
+.footer .footer-text {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
