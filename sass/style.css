@@ -1,14 +1,10 @@
 @charset "UTF-8";
 .fade-in,
-.slide-in-left,
-.slide-in-right,
 .slide-in-top {
   opacity: 0;
   transition: all 0.8s ease-out;
 }
 .fade-in.visible,
-.slide-in-left.visible,
-.slide-in-right.visible,
 .slide-in-top.visible {
   opacity: 1;
   transform: translate(0, 0);
@@ -17,14 +13,6 @@
 .fade-in,
 .slide-in-top {
   transform: translateY(20px);
-}
-
-.slide-in-left {
-  transform: translateX(-30px);
-}
-
-.slide-in-right {
-  transform: translateX(30px);
 }
 
 * {
@@ -227,7 +215,7 @@ header.hero-img .btn:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  overflow-y: hidden;
+  overflow-x: hidden;
   z-index: 0;
 }
 .offers-hero .link {
@@ -251,25 +239,13 @@ header.hero-img .btn:hover {
   margin-bottom: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transform: translateX(30px);
-  transition: background-color, transform 0.8s ease-out;
+  transition: background-color, transform 0.3s ease-out;
   transition-delay: 0.1s;
   cursor: pointer;
 }
 .offers-hero .offers-hero-item a {
   color: #555;
   text-decoration: none;
-}
-.offers-hero .offers-hero-item.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-.offers-hero .offers-hero-item:nth-child(2) {
-  transition-delay: 0.2s;
-}
-.offers-hero .offers-hero-item:nth-child(3) {
-  transition-delay: 0.3s;
 }
 .offers-hero .offers-hero-item:hover {
   background-color: white;
@@ -278,6 +254,7 @@ header.hero-img .btn:hover {
 .offers-hero .offers-hero-item-text {
   font-size: 25px;
   color: orange;
+  font-weight: bold;
 }
 
 .why-us {
@@ -321,18 +298,6 @@ header.hero-img .btn:hover {
   transform: translateY(-10px);
 }
 
-@media (max-width: 768px) {
-  .why-us-item {
-    flex: 0 1 calc(50% - 40px);
-    max-width: calc(50% - 40px);
-  }
-}
-@media (max-width: 480px) {
-  .why-us-item {
-    flex: 0 1 100%;
-    max-width: 100%;
-  }
-}
 .footer {
   position: relative;
   color: #fff;
@@ -350,4 +315,17 @@ header.hero-img .btn:hover {
 }
 .footer .footer-text {
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .why-us-item {
+    flex: 0 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+@media (max-width: 480px) {
+  .why-us-item {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
