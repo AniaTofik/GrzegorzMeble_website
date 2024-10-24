@@ -105,6 +105,7 @@ nav {
 		color: $orange;
 	}
 }
+// header section
 
 header.hero-img {
 	position: relative;
@@ -287,13 +288,15 @@ header.hero-img {
   }
   
   .why-us-item {
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+	height: 180px;
 	background-color: $light-brown;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	padding: 20px;
 	margin: 10px;
-	flex: 0 1 calc(33.333% - 40px);
-	max-width: calc(33.333% - 40px);
 	transition: transform 0.3s ease;
   }
   
@@ -301,12 +304,12 @@ header.hero-img {
 	font-size: 18px;
 	font-weight: 600;
 	color: #444;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	color: rgb(190, 129, 14);
   }
   
   .why-us-item p {
-	font-size: 14px;
+	font-size: 16px;
 	padding: 10px;
 	line-height: 1.8;
 	color: #666;
@@ -341,68 +344,126 @@ header.hero-img {
 	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
+
+	.section-title {
+		h2 {
+			font-size: 32px;
+		}
+	}
 	nav {
 		span {
 			font-size: 26px;
 		}
-	
 		.navbar-toggler {
 			
 			padding: 20px 30px;
-			font-size: 24px;
+			font-size: 22px;
 			letter-spacing: 1px;
 		}
 	
 		.navbar-logo {
-			display: block;
-			font-weight: bold;
-			font-size: 16px;
-			color: $light-brown;
-			text-decoration: none;
-			letter-spacing: 2px;
-			text-transform: uppercase;
+			font-size: 18px;
 		}
-	
-		.navbar-logo:hover {
-			color: $light-brown;
-			text-decoration-line: underline;
-			text-underline-offset: 8px;
-		}
-	
-		.navbar-nav {
-			background-color: rgba(43, 42, 42, 0.9);
-		}
-	
 		a.nav-link {
-			color: $light-brown;
-			transition: color, text-decoration-line, .5s;
-		}
-	
-		a.nav-link:hover {
-			color: $orange;
-			text-decoration-line: underline;
-			text-underline-offset: 8px;
-		}
-	
-		.navbar-nav .nav-link.active,
-		.navbar-nav .nav-link.show {
-			color: $orange;
+			font-size: 20px;
 		}
 	}
 
-
-
-
-	.why-us-item {
-	  flex: 0 1 calc(50% - 40px);
-	  max-width: calc(50% - 40px);
+	header.hero-img {
+		.hero-text {
+			p {
+				font-size: 24px;
+				span {
+					font-size: 26px;
+				}
+			}
+		}
+	
+		.btn {
+			font-size: 18px;
+			padding: 10px 20px;
+		}
 	}
-  }
+
+	.about-us {
+		p {
+			font-size: 1.2rem;
+		}
+	}
+
+	.offers-hero {
+		font-size: 18px;
+	
+		.link {
+			font-size: 22px;
+			span {
+				font-size: 22px;
+			}
+		}
+	
+		.offers-hero-item {
+			background-color: $light-brown;
+			padding: 14px;
+			margin-bottom: 15px;
+			a {
+				color: #555;
+				text-decoration: none;
+				font-size: 20px;
+			}
+		}
+		.offers-hero-item-text {
+			font-size: 28px;
+		}
+	}
+	    
+	  
+	  .why-us-item {
+		min-width: 200px;
+		height: 220px;
+		padding: 20px;
+	  }
+	  
+	  .why-us-item h3 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	  }
+	  
+	  .why-us-item p {
+		font-size: 20px;
+	  }
+	  
+	  .why-us-item:hover {
+		transform: translateY(-10px);
+	  }
+	  .footer {
+			padding: 20px;
+			font-size: 22px;	
+		.text {
+			i {			
+				padding-right: 15px;
+				font-size: 22px;
+			}
+		
+		}
+		.footer-text {
+			font-size: 16px;
+		}
+	}
+}
+
+
+
+
+// 	.why-us-item {
+// 	  flex: 0 1 calc(50% - 40px);
+// 	  max-width: calc(50% - 40px);
+// 	}
+//   }
   
-  @media (max-width: 480px) {
-	.why-us-item {
-	  flex: 0 1 100%;
-	  max-width: 100%;
-	}
-  }
+//   @media (max-width: 480px) {
+// 	.why-us-item {
+// 	  flex: 0 1 100%;
+// 	  max-width: 100%;
+// 	}
+//   }

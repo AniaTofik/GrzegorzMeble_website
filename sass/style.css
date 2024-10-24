@@ -273,13 +273,15 @@ header.hero-img .btn:hover {
 }
 
 .why-us-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  height: 180px;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
   margin: 10px;
-  flex: 0 1 calc(33.333% - 40px);
-  max-width: calc(33.333% - 40px);
   transition: transform 0.3s ease;
 }
 
@@ -287,12 +289,12 @@ header.hero-img .btn:hover {
   font-size: 18px;
   font-weight: 600;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: rgb(190, 129, 14);
 }
 
 .why-us-item p {
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
   line-height: 1.8;
   color: #666;
@@ -321,53 +323,83 @@ header.hero-img .btn:hover {
   font-size: 12px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
   nav span {
     font-size: 26px;
   }
   nav .navbar-toggler {
     padding: 20px 30px;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 1px;
   }
   nav .navbar-logo {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  nav .navbar-logo:hover {
-    color: white;
-    text-decoration-line: underline;
-    text-underline-offset: 8px;
-  }
-  nav .navbar-nav {
-    background-color: rgba(43, 42, 42, 0.9);
+    font-size: 18px;
   }
   nav a.nav-link {
-    color: white;
-    transition: color, text-decoration-line, 0.5s;
+    font-size: 20px;
   }
-  nav a.nav-link:hover {
-    color: #e4a112;
-    text-decoration-line: underline;
-    text-underline-offset: 8px;
+  header.hero-img .hero-text p {
+    font-size: 24px;
   }
-  nav .navbar-nav .nav-link.active,
-  nav .navbar-nav .nav-link.show {
-    color: #e4a112;
+  header.hero-img .hero-text p span {
+    font-size: 26px;
+  }
+  header.hero-img .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .about-us p {
+    font-size: 1.2rem;
+  }
+  .offers-hero {
+    font-size: 18px;
+  }
+  .offers-hero .link {
+    font-size: 22px;
+  }
+  .offers-hero .link span {
+    font-size: 22px;
+  }
+  .offers-hero .offers-hero-item {
+    background-color: white;
+    padding: 14px;
+    margin-bottom: 15px;
+  }
+  .offers-hero .offers-hero-item a {
+    color: #555;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .offers-hero .offers-hero-item-text {
+    font-size: 28px;
   }
   .why-us-item {
-    flex: 0 1 calc(50% - 40px);
-    max-width: calc(50% - 40px);
+    min-width: 200px;
+    height: 220px;
+    padding: 20px;
   }
-}
-@media (max-width: 480px) {
-  .why-us-item {
-    flex: 0 1 100%;
-    max-width: 100%;
+  .why-us-item h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .why-us-item p {
+    font-size: 20px;
+  }
+  .why-us-item:hover {
+    transform: translateY(-10px);
+  }
+  .footer {
+    padding: 20px;
+    font-size: 22px;
+  }
+  .footer .text i {
+    padding-right: 15px;
+    font-size: 22px;
+  }
+  .footer .footer-text {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
