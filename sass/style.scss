@@ -54,7 +54,7 @@ body {
 	width: 40%;
 	height: 2px;
 	margin-bottom: 40px;
-	background-color: $orange;
+	background-color: $dark-orange;
 	margin: auto;
 }
 
@@ -65,35 +65,29 @@ nav {
 
 	span {
 		font-size: 22px;
-		color: $orange;
+		color: $dark-orange;
 	}
 
 	.navbar-toggler {
-		padding: 10px 20px;
-		color: $light-brown;
-		font-size: 22px;
-		letter-spacing: 1px;
+		color:white;
+		padding: 5px 10px;
 	}
 
 	.navbar-logo {
 		display: block;
 		font-weight: bold;
 		font-size: 16px;
-		color: $light-brown;
+		color:white;
 		text-decoration: none;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		text-transform: uppercase;
 	}
 
 	.navbar-logo:hover {
-		color: $light-brown;
 		text-decoration-line: underline;
 		text-underline-offset: 8px;
 	}
 
-	.navbar-nav {
-		background-color: rgba(43, 42, 42, 0.9);
-	}
 
 	a.nav-link {
 		color: $light-brown;
@@ -141,21 +135,30 @@ header.hero-img {
 		flex-direction: column;
 		height: 100%;
 
-		h1 {
-			color: $orange;
+		p {
+			color: white;
+			font-size: 18px;
+			letter-spacing: 1px;
+			span {
+				font-weight: bold;
+				color: $orange;
+				font-size: 22px;
+				text-transform: uppercase;
+			}
 		}
 	}
 
 	.btn {
 		color: $light-brown;
-		background-color: $orange;
+		background-color: rgb(190, 129, 14);
 		font-weight: 600;
 		letter-spacing: 1px;
 		transition: background-color, .5s;
+		border:none;
 	}
 
 	.btn:hover {
-		background-color: #e4a112;
+		background-color: $orange;
 	}
 }
 
@@ -299,6 +302,7 @@ header.hero-img {
 	font-weight: 600;
 	color: #444;
 	margin-bottom: 10px;
+	color: rgb(190, 129, 14);
   }
   
   .why-us-item p {
@@ -328,7 +332,7 @@ header.hero-img {
 			
             padding-right: 10px;
             font-size: 22px;
-            color: $orange;
+            color: $dark-orange;
         }
 	
     }
