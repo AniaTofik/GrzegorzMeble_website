@@ -311,6 +311,10 @@ header.hero-img .btn:hover {
   transform: translateY(-10px);
 }
 
+.portfolio {
+  background: linear-gradient(to bottom right, #fff, #f9f5f0);
+}
+
 .footer {
   position: relative;
   color: #fff;
