@@ -8,7 +8,7 @@
 }
 
 html {
-	scroll-padding-top: 74px;
+	scroll-padding-top: 65px;
 	scroll-behavior: smooth;
 }
 
@@ -17,10 +17,6 @@ body {
 	font-family: 'Poppins', sans-serif;
 	color: $light-brown;
 	overflow-x: hidden;
-}
-
-.shadow-bg {
-	background-color: rgba(43, 42, 42, 0.9);
 }
 
 .hero-shadow {
@@ -59,6 +55,7 @@ body {
 }
 
 nav {
+	background-color: rgba(43, 42, 42, 0.9);
 	text-transform: uppercase;
 	z-index: 5;
 	transition: background-color 0.6;
@@ -179,7 +176,7 @@ header.hero-img {
 		background-color: $light-brown;
 		border-left: 3px solid $orange;
 		padding: 20px;
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	}
 }
 
@@ -252,7 +249,7 @@ header.hero-img {
 		padding: 15px;
 		margin-bottom: 15px;
 		border-radius: 8px;
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 		transition: background-color, transform 0.3s ease-out;
 		transition-delay: 0.1s;
 		cursor: pointer;
@@ -292,18 +289,19 @@ header.hero-img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
   }
   
   .why-us-item {
 	display: flex;
 	flex-direction: column;
-	min-width: 200px;
-	height: 220px;
+	width: 95vw;
+	min-height: 120px;
 	background-color: $light-brown;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	padding: 20px;
-margin-bottom: 15px;
+	margin-bottom: 20px;
 	transition: transform 0.3s ease;
   }
   
@@ -311,6 +309,7 @@ margin-bottom: 15px;
 	font-size: 18px;
 	font-weight: 600;
 	color: #444;
+	margin-top: 10px;
 	margin-bottom: 15px;
 	color: rgb(190, 129, 14);
   }
@@ -554,19 +553,19 @@ margin-bottom: 15px;
 
 	.section-title {
 		h2 {
-			font-size: 36px;
+			font-size: 34px;
 		}
 	}
 	nav {
 		span {
-			font-size: 30px;
+			font-size: 28px;
 		}
 	
 		.navbar-logo {
 			font-size: 22px;
 		}
 		a.nav-link {
-			font-size: 24px;
+			font-size: 22px;
 		}
 	}
 

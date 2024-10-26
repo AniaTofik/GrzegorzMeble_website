@@ -6,10 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const fadeInElements = document.querySelectorAll('.fade-in');
 	const slideInElements = document.querySelectorAll('.slide-in-left, .slide-in-top, .slide-in-bottom, .slide-in-right');
 
-	function addShadow() {
-		nav.classList.toggle('shadow-bg', window.scrollY >= 0);
-	}
-
 	function handleNavLinkClick() {
 		navCollapse.classList.remove('show');
 		navCollapse.classList.add('hidden');
@@ -33,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	btnMenu.addEventListener('click', toggleNavMenu);
 	window.addEventListener('scroll', () => {
-		addShadow();
 		handleScrollAnimation(fadeInElements);
 		handleScrollAnimation(slideInElements);
 	});
