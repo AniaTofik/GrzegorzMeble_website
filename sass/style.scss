@@ -329,7 +329,7 @@ header.hero-img {
 //   portfolio section {
 
 .portfolio {
-	background: linear-gradient(to bottom right, #fff, #f9f5f0);
+	background: $light-color;
 }
   
 //   footer section
@@ -547,10 +547,17 @@ header.hero-img {
 				padding-right: 18px;
 				font-size: 24px;
 			}
-		
 		}
 		.footer-text {
 			font-size: 18px;
+		}
+	}
+	.portfolio {
+		.portfolio-card {
+			img{
+				height: 30vh;
+				object-fit: cover;
+			}
 		}
 	}
 }
@@ -654,6 +661,22 @@ header.hero-img {
 			font-size: 20px;
 		}
 	}
+	.portfolio {
+		.portfolio-card {
+			img{
+				height: 40vh;
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.portfolio {
+		.portfolio-card {
+			img{
+				height: 45vh;
+			}
+		}
+	}
 }
 
 @media (min-width: 1000px) {
@@ -678,8 +701,6 @@ header.hero-img {
 			  }
 		  }
 	  }
-	  
-
 }
 @media (min-width: 1800px) {
 	.why-us-content {

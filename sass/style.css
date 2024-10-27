@@ -309,7 +309,7 @@ header.hero-img .btn:hover {
 }
 
 .portfolio {
-  background: linear-gradient(to bottom right, #fff, #f9f5f0);
+  background: #fcfaf7;
 }
 
 .footer {
@@ -475,6 +475,11 @@ header.hero-img .btn:hover {
   .footer .footer-text {
     font-size: 18px;
   }
+  .portfolio .portfolio-card img {
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (min-width: 992px) {
   html {
@@ -547,6 +552,14 @@ header.hero-img .btn:hover {
   }
   .footer .footer-text {
     font-size: 20px;
+  }
+  .portfolio .portfolio-card img {
+    height: 40vh;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio .portfolio-card img {
+    height: 45vh;
   }
 }
 @media (min-width: 1000px) {
