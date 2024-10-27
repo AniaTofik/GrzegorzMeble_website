@@ -363,6 +363,9 @@ header.hero-img {
 }
 
 @media (min-width: 576px) {
+	html {
+		scroll-padding-top: 71px;
+	}
 
 	.section-title {
 		h2 {
@@ -466,6 +469,9 @@ header.hero-img {
 }
 
 @media (min-width: 768px) {
+	html {
+		scroll-padding-top: 75px;
+	}
 
 	.section-title {
 		h2 {
@@ -557,6 +563,10 @@ header.hero-img {
 	}
 }
 @media (min-width: 992px) {
+	html {
+		scroll-padding-top: 89px;
+	}
+
 
 	.section-title {
 		h2 {

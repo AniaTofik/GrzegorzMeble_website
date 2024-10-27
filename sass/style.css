@@ -340,6 +340,9 @@ header.hero-img .btn:hover {
 }
 
 @media (min-width: 576px) {
+  html {
+    scroll-padding-top: 71px;
+  }
   .section-title h2 {
     font-size: 32px;
   }
@@ -416,6 +419,9 @@ header.hero-img .btn:hover {
   }
 }
 @media (min-width: 768px) {
+  html {
+    scroll-padding-top: 75px;
+  }
   .section-title h2 {
     font-size: 34px;
   }
@@ -482,6 +488,9 @@ header.hero-img .btn:hover {
   }
 }
 @media (min-width: 992px) {
+  html {
+    scroll-padding-top: 89px;
+  }
   .section-title h2 {
     font-size: 34px;
   }
