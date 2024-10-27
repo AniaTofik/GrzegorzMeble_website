@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
 	navLinks.forEach(navLink => navLink.addEventListener('click', handleNavLinkClick));
 
 	btnMenu.addEventListener('click', toggleNavMenu);
@@ -33,3 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		handleScrollAnimation(slideInElements);
 	});
 });
+
+function openLightbox(imageSrc) {
+	document.getElementById("lightbox").style.display = "flex";
+	document.getElementById("lightbox-img").src = imageSrc;
+}
+
+function closeLightbox() {
+	document.getElementById("lightbox").style.display = "none";
+}

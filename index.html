@@ -50,41 +50,46 @@
   
   <section class="gallery-section">
       <div class="container py-4 py-sm-5 gallery-container">
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/IMG-20210502-WA0000.jpg')">
               <img src="img/IMG-20210502-WA0000.jpg" alt="Kuchnia 1">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/kitchens/IMG-20210505-WA0000.jpg')">
               <img src="img/kitchens/IMG-20210505-WA0000.jpg" alt="Kuchnia 3">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/łazienka/IMG-20241020-WA0021.jpg')">
               <img src="img/łazienka/IMG-20241020-WA0021.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/łazienka/IMG-20241021-WA0006.jpg')">
               <img src="img/łazienka/IMG-20241021-WA0006.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/Marty mama/IMG-20241020-WA0012.jpg')">
               <img src="img/Marty mama/IMG-20241020-WA0012.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/meble Grześ/kuchnia Damian/IMG-20241015-WA0004.jpg')">
               <img src="img/meble Grześ/kuchnia Damian/IMG-20241015-WA0004.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/20231030_200612.jpg')">
               <img src="img/20231030_200612.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/kitchens/20220128_185209.jpg')">
               <img src="img/kitchens/20220128_185209.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/kitchens/IMG-20210901-WA0005.jpg')">
               <img src="img/kitchens/IMG-20210901-WA0005.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/kitchens/IMG-20230324-WA0001.jpg')">
               <img src="img/kitchens/IMG-20230324-WA0001.jpg" alt="Kuchnia 5">
           </div>
-          <div class="gallery-item">
+          <div class="gallery-item" onclick="openLightbox('img/kitchens/20210320_171815.jpg')">
               <img src="img/kitchens/20210320_171815.jpg" alt="Kuchnia 5">
           </div>
       </div>
   </section>
+  <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" src="">
+</div>
   
  <main>
   <section class="about-us" id="about-us">
