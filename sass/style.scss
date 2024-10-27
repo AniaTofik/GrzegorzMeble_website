@@ -15,7 +15,7 @@ html {
 body {
 	min-height: 100vh;
 	font-family: 'Poppins', sans-serif;
-	color: $light-brown;
+	color: $light-color;
 	overflow-x: hidden;
 }
 
@@ -41,10 +41,10 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: #333;
+	color: $brown;
 	font-size: 20px;
 	margin-bottom: 20px;
-	text-shadow: 1px 1px 1px rgb(20, 20, 20);
+	text-shadow: 1px 1px 1px $brown;
 }
 .underline {
 	width: 40%;
@@ -66,7 +66,7 @@ nav {
 	}
 
 	.navbar-toggler {
-		color:white;
+		color: $light-color;
 		padding: 5px 10px;
 	}
 
@@ -74,7 +74,7 @@ nav {
 		display: block;
 		font-weight: bold;
 		font-size: 16px;
-		color:white;
+		color:$light-color;
 		text-decoration: none;
 		letter-spacing: 1px;
 		text-transform: uppercase;
@@ -87,7 +87,7 @@ nav {
 
 
 	a.nav-link {
-		color: $light-brown;
+		color: $light-color;
 		transition: color, text-decoration-line, .5s;
 	}
 
@@ -108,7 +108,7 @@ header.hero-img {
 	position: relative;
 	height: 100vh;
 	font-size: 16px;
-	color: $light-brown;
+	color: $light-color;
 	background-image: url('../img/furniture-998265_1920.jpg');
 	background-size: cover;
 	background-position: center;
@@ -121,7 +121,7 @@ header.hero-img {
 		font-size: 20px;
 
 		span {
-			color: $light-brown;
+			color: $light-color;
 			font-size: 20px;
 		}
 	}
@@ -134,7 +134,7 @@ header.hero-img {
 		height: 100%;
 
 		p {
-			color: white;
+			color: $light-color;
 			font-size: 16px;
 			letter-spacing: 1px;
 			span {
@@ -149,7 +149,7 @@ header.hero-img {
 
 	.btn {
 		margin-top: 14px;
-		color: $light-brown;
+		color: $light-color;
 		background-color: rgb(190, 129, 14);
 		font-weight: 600;
 		letter-spacing: 1px;
@@ -168,13 +168,13 @@ header.hero-img {
 
 	p {
 		font-size: 1rem;
-		color: #555;
+		color: $brown;
 		line-height: 1.8;
 		margin-bottom: 20px;
 	}
 
 	.background-box {
-		background-color: $light-brown;
+		background-color: $light-color;
 		border-left: 3px solid $orange;
 		padding: 20px;
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -246,29 +246,27 @@ header.hero-img {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: #555;
-		background-color: $light-brown;
+		background-color: $light-color;
 		padding: 15px;
 		margin-bottom: 15px;
 		border-radius: 8px;
 		box-shadow: 5px 5px 5px rgb(41, 40, 40);
-		transition: background-color, transform 0.3s ease-out;
+		transition: transform 0.3s ease-out;
 		transition-delay: 0.1s;
 		cursor: pointer;
 
-		a {
-			color: #555;
+		a.offers-hero-title {
+			color: $brown;
 			text-decoration: none;
 		}
 
 		&:hover {
-			background-color: white;
 			transform: scale(1.05);
 		}
 	}
 	.offers-hero-item-text {
 		font-size: 25px;;
-		color: orange;
+		color: $orange;
 		font-weight: bold;
 		text-shadow: 1px 1px 3px rgb(20, 20, 20);
 	}
@@ -283,7 +281,6 @@ header.hero-img {
 	padding: 0;
 	margin: 0;
 	background: linear-gradient(to bottom right, #fff, #f9f5f0);
-	color: #555;
 	text-align: center;
   }
   
@@ -300,7 +297,7 @@ header.hero-img {
 	flex-direction: column;
 	width: 95vw;
 	min-height: 120px;
-	background-color: $light-brown;
+	background-color: $light-color;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	padding: 20px;
@@ -311,19 +308,18 @@ header.hero-img {
   .why-us-item h3 {
 	font-size: 18px;
 	font-weight: 600;
-	color: #444;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	color: rgb(190, 129, 14);
+	color: $orange;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 1px rgb(194, 122, 80);
+	text-shadow: 1px 1px 1px rgb(155, 87, 32);
   }
   
   .why-us-item p {
 	font-size: 16px;
 	padding: 10px;
 	line-height: 1.8;
-	color: #666;
+	color: $brown;
   }
   
   .why-us-item:hover {
@@ -339,13 +335,13 @@ header.hero-img {
 //   footer section
 .footer {
 	position: relative;
-    color: #fff;
+    color: $light-color;
     background-image: url('../img/DALL·E\ 2024-10-23\ 17.28.16\ -\ A\ detailed\ close-up\ of\ a\ wood\ grain\ texture\,\ showcasing\ natural\ lines\,\ patterns\,\ and\ knots\ typical\ of\ oak\ or\ ash\ wood.\ The\ wood\ has\ a\ light\ brown\ hue\ .webp');
-		padding: 10px;
-		font-size: 16px;
-		background-size: cover;
-		background-position: center;
-		z-index: 0;
+	padding: 10px;
+	font-size: 16px;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
 
     .text {
         i {
@@ -420,11 +416,11 @@ header.hero-img {
 		}
 	
 		.offers-hero-item {
-			background-color: $light-brown;
+			background-color: $light-color;
 			padding: 14px;
 			margin-bottom: 15px;
 			a {
-				color: #555;
+				color: $brown;
 				text-decoration: none;
 				font-size: 20px;
 			}
@@ -618,7 +614,6 @@ header.hero-img {
 		}
 	
 		.offers-hero-item {
-			background-color: $light-brown;
 			padding: 14px;
 			margin-bottom: 18px;
 			a {
