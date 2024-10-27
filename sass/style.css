@@ -29,7 +29,7 @@ html {
 body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-  color: #fcfaf7;
+  color: #fff;
   overflow-x: hidden;
 }
 
@@ -80,14 +80,14 @@ nav span {
   color: rgb(190, 129, 14);
 }
 nav .navbar-toggler {
-  color: #fcfaf7;
+  color: #fff;
   padding: 5px 10px;
 }
 nav .navbar-logo {
   display: block;
   font-weight: bold;
   font-size: 16px;
-  color: #fcfaf7;
+  color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -97,7 +97,7 @@ nav .navbar-logo:hover {
   text-underline-offset: 8px;
 }
 nav a.nav-link {
-  color: #fcfaf7;
+  color: #fff;
   transition: color, text-decoration-line, 0.5s;
 }
 nav a.nav-link:hover {
@@ -114,7 +114,7 @@ header.hero-img {
   position: relative;
   height: 100vh;
   font-size: 16px;
-  color: #fcfaf7;
+  color: #fff;
   background-image: url("../img/furniture-998265_1920.jpg");
   background-size: cover;
   background-position: center;
@@ -127,7 +127,7 @@ header.hero-img h1 {
   font-size: 20px;
 }
 header.hero-img h1 span {
-  color: #fcfaf7;
+  color: #fff;
   font-size: 20px;
 }
 header.hero-img .hero-text {
@@ -138,7 +138,7 @@ header.hero-img .hero-text {
   height: 100%;
 }
 header.hero-img .hero-text p {
-  color: #fcfaf7;
+  color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -151,7 +151,7 @@ header.hero-img .hero-text p span {
 }
 header.hero-img .btn {
   margin-top: 14px;
-  color: #fcfaf7;
+  color: #fff;
   background-color: rgb(190, 129, 14);
   font-weight: 600;
   letter-spacing: 1px;
@@ -160,6 +160,50 @@ header.hero-img .btn {
 }
 header.hero-img .btn:hover {
   background-color: #e4a112;
+}
+
+.hero-section {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2em;
+  color: #c2a477;
+}
+
+.gallery-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 15px;
+  max-width: 90%;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
 }
 
 .about-us {
@@ -172,7 +216,7 @@ header.hero-img .btn:hover {
   margin-bottom: 20px;
 }
 .about-us .background-box {
-  background-color: #fcfaf7;
+  background-color: #fff;
   border-left: 3px solid #e4a112;
   padding: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -236,7 +280,7 @@ header.hero-img .btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fcfaf7;
+  background-color: #fff;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -282,7 +326,7 @@ header.hero-img .btn:hover {
   flex-direction: column;
   width: 90vw;
   min-height: 120px;
-  background-color: #fcfaf7;
+  background-color: #fff;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
@@ -309,12 +353,16 @@ header.hero-img .btn:hover {
 }
 
 .portfolio {
-  background: #fcfaf7;
+  background: #fff;
+}
+.portfolio img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
   position: relative;
-  color: #fcfaf7;
+  color: #fff;
   background-image: url("../img/DALL·E 2024-10-23 17.28.16 - A detailed close-up of a wood grain texture, showcasing natural lines, patterns, and knots typical of oak or ash wood. The wood has a light brown hue .webp");
   padding: 10px;
   font-size: 16px;
@@ -373,7 +421,7 @@ header.hero-img .btn:hover {
     font-size: 22px;
   }
   .offers-hero .offers-hero-item {
-    background-color: #fcfaf7;
+    background-color: #fff;
     padding: 14px;
     margin-bottom: 15px;
   }
