@@ -45,6 +45,7 @@ body {
 	color: #333;
 	font-size: 20px;
 	margin-bottom: 20px;
+	text-shadow: 1px 1px 2px rgb(20, 20, 20);
 }
 .underline {
 	width: 40%;
@@ -142,6 +143,7 @@ header.hero-img {
 				color: $orange;
 				font-size: 20px;
 				text-transform: uppercase;
+				text-shadow: 1px 1px 3px rgb(20, 20, 20);
 			}
 		}
 	}
@@ -237,6 +239,7 @@ header.hero-img {
 			font-size: 18px;
 			text-transform: uppercase;
 			color: $orange;
+			text-shadow: 1px 1px 3px rgb(20, 20, 20);
 		}
 	}
 
@@ -249,7 +252,7 @@ header.hero-img {
 		padding: 15px;
 		margin-bottom: 15px;
 		border-radius: 8px;
-		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 5px 5px 5px rgb(41, 40, 40);
 		transition: background-color, transform 0.3s ease-out;
 		transition-delay: 0.1s;
 		cursor: pointer;
@@ -268,6 +271,7 @@ header.hero-img {
 		font-size: 25px;;
 		color: orange;
 		font-weight: bold;
+		text-shadow: 1px 1px 3px rgb(20, 20, 20);
 	}
 }
 
@@ -312,6 +316,8 @@ header.hero-img {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	color: rgb(190, 129, 14);
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px rgb(194, 122, 80);
   }
   
   .why-us-item p {
@@ -444,7 +450,8 @@ header.hero-img {
 	  
 	  .footer {
 			padding: 20px;
-			font-size: 22px;	
+			font-size: 22px;
+			text-shadow: 1px 1px 1px rgb(15, 15, 15);	
 		.text {
 			i {			
 				padding-right: 15px;
