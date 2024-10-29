@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function openLightbox(imageSrc) {
-	document.getElementById("lightbox").style.display = "flex";
+	document.getElementById("lightbox").style.display = "block";
 	document.getElementById("lightbox-img").src = imageSrc;
 }
 

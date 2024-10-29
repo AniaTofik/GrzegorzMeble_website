@@ -219,9 +219,11 @@ header.hero-img .btn:hover {
   max-width: 60%;
   max-height: 60%;
   margin: auto;
-  display: block;
-  margin-top: 50%;
+  margin-top: 10%;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .close {
