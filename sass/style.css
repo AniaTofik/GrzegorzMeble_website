@@ -687,4 +687,9 @@ header.hero-img .btn:hover {
   .why-us-content .why-us-item p {
     font-size: 22px;
   }
+}
+@media (min-width: 3141px) {
+  .why-us-content .why-us-item {
+    min-width: 10vw;
+  }
 }/*# sourceMappingURL=style.css.map */

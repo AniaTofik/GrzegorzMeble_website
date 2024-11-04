@@ -819,3 +819,11 @@ header.hero-img {
 		  }
 	  }
 }
+@media (min-width: 3141px) {
+	.why-us-content {
+		.why-us-item {
+			min-width: 10vw;
+			// margin: 9px;
+		  }
+	  }
+}
