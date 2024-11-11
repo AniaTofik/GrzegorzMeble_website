@@ -751,12 +751,13 @@ header.hero-img {
 	}
 }
 @media (min-width: 1200px) {
-	.portfolio {
-		.portfolio-card {
-			img{
-				height: 45vh;
+		.portfolio {
+			.portfolio-card {
+				img{
+					height: 55vh;
+					object-fit: cover;
+				}
 			}
-		}
 	}
 }
 

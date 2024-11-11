@@ -636,7 +636,9 @@ header.hero-img .btn:hover {
 }
 @media (min-width: 1200px) {
   .portfolio .portfolio-card img {
-    height: 45vh;
+    height: 55vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1000px) {
