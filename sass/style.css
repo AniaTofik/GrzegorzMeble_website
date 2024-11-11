@@ -553,7 +553,7 @@ header.hero-img .btn:hover {
     font-size: 18px;
   }
   .portfolio .portfolio-card img {
-    height: 30vh;
+    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
