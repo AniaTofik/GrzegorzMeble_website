@@ -405,7 +405,19 @@ header.hero-img .btn:hover {
   color: rgb(190, 129, 14);
 }
 .footer .footer-text {
+  margin: 10px;
   font-size: 12px;
+}
+.footer .footer-text a {
+  color: #e4a112;
+  text-decoration: none;
+}
+.footer .footer-text a:hover {
+  color: rgb(190, 129, 14);
+}
+
+.privacy_policy {
+  color: #522e24;
 }
 
 @media (min-width: 576px) {

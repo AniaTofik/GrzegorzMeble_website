@@ -434,9 +434,25 @@ header.hero-img {
 	
     }
 	.footer-text {
+		margin: 10px;
 		font-size: 12px;
+		a {
+		color: $orange;
+		text-decoration: none;
+		} 
+		a:hover {
+		color: rgb(190, 129, 14);
+		} 
 	}
+	
 }
+
+// privacy police
+.privacy_policy {
+	color: $brown;
+
+}
+
 
 @media (min-width: 576px) {
 	html {
