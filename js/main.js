@@ -41,3 +41,11 @@ function openLightbox(imageSrc) {
 function closeLightbox() {
 	document.getElementById("lightbox").style.display = "none";
 }
+
+	const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	const spanYearFooter = document.querySelector('#custom-footer-year')
+	spanYearFooter.textContent = year
+}
+
+handleCurrentYear()
