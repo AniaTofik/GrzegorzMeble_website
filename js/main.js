@@ -49,3 +49,18 @@ function closeLightbox() {
 }
 
 handleCurrentYear()
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("cookie-modal");
+    const btn = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookiesAccepted")) {
+      modal.classList.add("show");
+    }
+
+    btn.addEventListener("click", function () {
+      localStorage.setItem("cookiesAccepted", "true");
+      modal.classList.remove("show");
+    });
+  });
+

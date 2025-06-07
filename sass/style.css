@@ -433,6 +433,34 @@ header.hero-img .btn:hover {
   font-weight: bold;
 }
 
+.cookie-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 9999;
+  display: none; /* domyślnie ukryty */
+}
+
+.cookie-modal.show {
+  display: block;
+}
+
+.cookie-modal button {
+  background-color: #c2a477;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 @media (min-width: 576px) {
   html {
     scroll-padding-top: 71px;
