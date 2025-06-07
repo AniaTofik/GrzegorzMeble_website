@@ -180,11 +180,37 @@
   </div>
 </div>
   </section>
+    <section class="contact py-5" id="contact">
+  <div class="container">
+     <div class="section-title">
+      <h2 class="slide-in-top">Skontaktuj się z nami</h2>
+      <div class="underline"></div>
+    </div>
+    <p>Skontaktuj się z nami za pomocą formularza lub napisz bezpośrednio na maila: <strong>grzegorzmeble@poczta.onet.pl</strong></p>
+    <form action="kontakt.php" method="POST" class="mt-4">
+      <div class="mb-3">
+        <label for="name" class="form-label">Imię i nazwisko</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Adres e-mail</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Wiadomość</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+    </form>
+  </div>
+</section>
+
+</section>
      <footer class="footer" id="contact">
       <div class="footer-container">
         <div class="container py-4 py-sm-5">
           <div class="section-title">
-            <h2 class="slide-in-top text-light">Skontaktuj się z nami</h2>
+            <h2 class="slide-in-top text-light">GrzegorzMeble</h2>
             <div class="underline mx-auto"></div>
           </div>
       <div class="text text-center mt-5">
@@ -202,6 +228,7 @@
     </div>
       <div class="hero-shadow"></div>
   </footer>
+
   <div id="cookie-modal" class="cookie-modal">
   <div class="cookie-content">
     <p>Ta strona używa ciasteczek. Więcej informacji znajdziesz w <a href="/privacy_policy" target="_blank">Polityce prywatności</a>.</p>

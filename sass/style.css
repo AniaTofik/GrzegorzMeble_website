@@ -467,6 +467,19 @@ header.hero-img .btn:hover {
   background-color: #e4a112;
 }
 
+.contact {
+  color: #522e24;
+}
+
+.contact .btn-primary {
+  background-color: #c2a477;
+  border: none;
+}
+
+.contact .btn-primary:hover {
+  background-color: #a68863;
+}
+
 @media (min-width: 576px) {
   html {
     scroll-padding-top: 71px;

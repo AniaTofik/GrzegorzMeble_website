@@ -499,6 +499,18 @@ header.hero-img {
 	background-color: $orange;
 }
 
+// contact
+.contact {
+	color: $brown;
+}
+.contact .btn-primary {
+  background-color: #c2a477;
+  border: none;
+}
+.contact .btn-primary:hover {
+  background-color: #a68863;
+}
+
 
 @media (min-width: 576px) {
 	html {
