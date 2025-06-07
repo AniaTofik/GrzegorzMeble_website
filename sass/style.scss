@@ -448,11 +448,22 @@ header.hero-img {
 }
 
 // privacy police
-.privacy_policy {
+.privacy_policy-text {
+	padding: 10px;
 	color: $brown;
-
+.privacy_policy-text-title {
+		font-size: 18px;
+			font-weight: 600;
+			margin-top: 10px;
+			margin-bottom: 15px;
+			color: $orange;
+			letter-spacing: 1px;
+			text-shadow: 1px 1px 1px rgb(155, 87, 32);
 }
-
+	p span {
+				font-weight: bold;
+			}
+}
 
 @media (min-width: 576px) {
 	html {
@@ -765,6 +776,15 @@ header.hero-img {
 			}
 		}
 	}
+	.privacy_policy-text {
+	p {
+			font-size: 20px;
+		}
+.privacy_policy-text-title {
+		font-size: 22px;
+	
+}	
+}
 }
 @media (min-width: 1200px) {
 		.portfolio {
@@ -840,7 +860,6 @@ header.hero-img {
 	.why-us-content {
 		.why-us-item {
 			min-width: 10vw;
-			// margin: 9px;
 		  }
 	  }
 }

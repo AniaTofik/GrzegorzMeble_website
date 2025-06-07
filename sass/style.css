@@ -416,8 +416,21 @@ header.hero-img .btn:hover {
   color: rgb(190, 129, 14);
 }
 
-.privacy_policy {
+.privacy_policy-text {
+  padding: 10px;
   color: #522e24;
+}
+.privacy_policy-text .privacy_policy-text-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #e4a112;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgb(155, 87, 32);
+}
+.privacy_policy-text p span {
+  font-weight: bold;
 }
 
 @media (min-width: 576px) {
@@ -644,6 +657,12 @@ header.hero-img .btn:hover {
   }
   .portfolio .portfolio-card img {
     height: 40vh;
+  }
+  .privacy_policy-text p {
+    font-size: 20px;
+  }
+  .privacy_policy-text .privacy_policy-text-title {
+    font-size: 22px;
   }
 }
 @media (min-width: 1200px) {
