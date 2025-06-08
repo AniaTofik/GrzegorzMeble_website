@@ -475,7 +475,7 @@ header.hero-img {
   padding: 20px;
   text-align: center;
   z-index: 9999;
-  display: none; /* domyślnie ukryty */
+  display: none;
 }
 
 .cookie-modal.show {
@@ -518,8 +518,24 @@ header.hero-img {
 		}
 }
 }
+// thank_you
 
-
+.thank-you-section {
+	height: 100vh;
+  	background-color: rgba(0, 0, 0, 0.9);
+  	color: $light-color;
+	h1 {
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+	a {
+		color: $orange;
+	}
+	a:hover {
+		color: rgb(190, 129, 14);
+	}
+}
 
 @media (min-width: 576px) {
 	html {
