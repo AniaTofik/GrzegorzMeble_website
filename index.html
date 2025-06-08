@@ -186,22 +186,35 @@
       <h2 class="slide-in-top">Skontaktuj się z nami</h2>
       <div class="underline"></div>
     </div>
-    <form action="kontakt.php" method="POST" class="form mt-4 mx-auto">
-        <p class="contact-text mb-5">Skontaktuj się z nami za pomocą formularza lub napisz bezpośrednio na maila: <strong>grzegorzmeble@poczta.onet.pl</strong></p>
-      <div class="mb-3">
-        <label for="name" class="form-label">Imię i nazwisko</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Adres e-mail</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Wiadomość</label>
-        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="btn">Wyślij wiadomość</button>
-    </form>
+<form action="https://formsubmit.co/grzegorzmeble@poczta.onet.pl" method="POST" class="form mt-4 mx-auto">
+  <p class="contact-text mb-5">
+    Skontaktuj się z nami za pomocą formularza lub napisz bezpośrednio na maila:
+    <strong>grzegorzmeble@poczta.onet.pl</strong>
+  </p>
+  
+  <!-- Ukryte pola -->
+  <input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://grzegorzmeble.pl/form_send.html">
+
+
+  <div class="mb-3">
+    <label for="name" class="form-label">Imię i nazwisko</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Adres e-mail</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Wiadomość</label>
+    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Wyślij wiadomość</button>
+</form>
+
   </div>
 </section>
 
