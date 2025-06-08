@@ -501,15 +501,23 @@ header.hero-img {
 
 // contact
 .contact {
-	color: $brown;
+		max-width: 900px;
+		margin: auto;
+		color: $brown;
+	form .btn {
+		margin-top: 14px;
+		color: $light-color;
+		background-color: rgb(190, 129, 14);
+		font-weight: 600;
+		letter-spacing: 1px;
+		transition: background-color, .5s;
+		border:none;
+		}
+		.btn:hover {
+  		background-color: $orange;
+	}
 }
-.contact .btn-primary {
-  background-color: #c2a477;
-  border: none;
-}
-.contact .btn-primary:hover {
-  background-color: #a68863;
-}
+
 
 
 @media (min-width: 576px) {
@@ -715,6 +723,12 @@ header.hero-img {
 			}
 		}
 	}
+	.contact {
+		font-size: 20px;
+		form .btn {
+			font-size: 18px;
+			}
+	}
 }
 @media (min-width: 992px) {
 	html {
@@ -830,8 +844,13 @@ header.hero-img {
 .privacy_policy-text-title {
 		font-size: 22px;
 	
-}	
-}
+		}	
+	}	.contact {
+		font-size: 22px;
+		form .btn {
+			font-size: 20px;
+			}
+	}
 }
 @media (min-width: 1200px) {
 		.portfolio {

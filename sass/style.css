@@ -468,16 +468,21 @@ header.hero-img .btn:hover {
 }
 
 .contact {
+  max-width: 900px;
+  margin: auto;
   color: #522e24;
 }
-
-.contact .btn-primary {
-  background-color: #c2a477;
+.contact form .btn {
+  margin-top: 14px;
+  color: #fff;
+  background-color: rgb(190, 129, 14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color, 0.5s;
   border: none;
 }
-
-.contact .btn-primary:hover {
-  background-color: #a68863;
+.contact .btn:hover {
+  background-color: #e4a112;
 }
 
 @media (min-width: 576px) {
@@ -629,6 +634,12 @@ header.hero-img .btn:hover {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .contact {
+    font-size: 20px;
+  }
+  .contact form .btn {
+    font-size: 18px;
+  }
 }
 @media (min-width: 992px) {
   html {
@@ -710,6 +721,12 @@ header.hero-img .btn:hover {
   }
   .privacy_policy-text .privacy_policy-text-title {
     font-size: 22px;
+  }
+  .contact {
+    font-size: 22px;
+  }
+  .contact form .btn {
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
