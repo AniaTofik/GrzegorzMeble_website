@@ -501,21 +501,22 @@ header.hero-img {
 
 // contact
 .contact {
-		max-width: 900px;
-		margin: auto;
 		color: $brown;
-	form .btn {
-		margin-top: 14px;
-		color: $light-color;
-		background-color: rgb(190, 129, 14);
-		font-weight: 600;
-		letter-spacing: 1px;
-		transition: background-color, .5s;
-		border:none;
-		}
+	.form {
+			max-width: 800px;
+		.btn {
+			margin-top: 14px;
+			color: $light-color;
+			background-color: rgb(190, 129, 14);
+			font-weight: 600;
+			letter-spacing: 1px;
+			transition: background-color, .5s;
+			border:none;
+			}
 		.btn:hover {
-  		background-color: $orange;
-	}
+  			background-color: $orange;
+		}
+}
 }
 
 

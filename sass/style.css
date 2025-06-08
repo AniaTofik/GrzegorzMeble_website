@@ -468,11 +468,12 @@ header.hero-img .btn:hover {
 }
 
 .contact {
-  max-width: 900px;
-  margin: auto;
   color: #522e24;
 }
-.contact form .btn {
+.contact .form {
+  max-width: 800px;
+}
+.contact .form .btn {
   margin-top: 14px;
   color: #fff;
   background-color: rgb(190, 129, 14);
@@ -481,7 +482,7 @@ header.hero-img .btn:hover {
   transition: background-color, 0.5s;
   border: none;
 }
-.contact .btn:hover {
+.contact .form .btn:hover {
   background-color: #e4a112;
 }
 
