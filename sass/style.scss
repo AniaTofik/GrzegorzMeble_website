@@ -25,7 +25,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	z-index: -5;
 }
 
@@ -150,7 +150,7 @@ header.hero-img {
 	.btn {
 		margin-top: 14px;
 		color: $light-color;
-		background-color: rgb(149, 99, 3);
+		background-color: $dark-orange;
 		font-weight: 600;
 		letter-spacing: 1px;
 		transition: background-color, .5s;
@@ -165,7 +165,6 @@ header.hero-img {
 // mini-gallery
 .hero-section {
     margin-top: 40px;
-    color: #c2a477;
 }
 
 .gallery-section {
@@ -386,9 +385,9 @@ header.hero-img {
 			margin-top: 10px;
 			margin-bottom: 15px;
 			text-transform: uppercase;
-			color: rgb(149,99,3);
+			color: $dark-orange;
 			letter-spacing: 1px;
-			text-shadow: 0.5px 0.5px 0.5px rgb(149, 99, 3);
+			text-shadow: 0.5px 0.5px 0.5px $dark-orange;
 		  }
 		  
 		 p {
@@ -430,7 +429,7 @@ header.hero-img {
 			
             padding-right: 10px;
             font-size: 22px;
-            color: $dark-orange;
+            color: orange;
         }
 	
     }
@@ -442,7 +441,7 @@ header.hero-img {
 		text-decoration: none;
 		} 
 		a:hover {
-		color: rgb(190, 129, 14);
+		color: $dark-orange;
 		} 
 	}
 	
@@ -458,9 +457,9 @@ header.hero-img {
 		margin-top: 10px;
 		margin-bottom: 15px;
 		text-transform: uppercase;
-		color: rgb(149, 99, 3);
+		color: $dark-orange;
 		letter-spacing: 1px;
-		text-shadow: 0.5px 0.5px 0.5px rgb(149, 99, 3);
+		text-shadow: 0.5px 0.5px 0.5px $dark-orange;
 }
 	p span {
 				font-weight: bold;
@@ -485,7 +484,7 @@ header.hero-img {
 }
 
 .cookie-modal button {
-  background-color: rgb(149, 99, 3);
+  background-color: $dark-orange;
   border: none;
   color: $light-color;
   padding: 10px 20px;
@@ -510,7 +509,7 @@ header.hero-img {
 			margin-top: 14px;
 			text-transform: uppercase;
 			color: $light-color;
-			background-color: rgb(149, 99, 3);
+			background-color: $dark-orange;
 			font-weight: 600;
 			letter-spacing: 1px;
 			transition: background-color, .5s;
@@ -527,16 +526,33 @@ header.hero-img {
 	height: 100vh;
   	background-color: rgba(0, 0, 0, 0.9);
   	color: $light-color;
+	i {
+		color: $orange;
+	}
+
 	h1 {
+		font-size: 18px;
 		text-transform: uppercase;
 		font-weight: 600;
 		margin-bottom: 15px;
 	}
+
+	p {
+		font-size: 16px;
+	}
 	a {
-		color: $orange;
+		font-size: 12px;
+		margin-top: 14px;
+		text-transform: uppercase;
+		color: $light-color;
+		background-color: $dark-orange;
+		font-weight: 600;
+		letter-spacing: 1px;
+		transition: background-color, .5s;
+		border:none;
 	}
 	a:hover {
-		color: rgb(190, 129, 14);
+		background-color: $orange;
 	}
 }
 
@@ -749,7 +765,17 @@ header.hero-img {
 			font-size: 18px;
 			}
 	}
+	.thank-you-section {
+	h1 {
+		font-size: 22px;
+	}
+	p {
+		font-size: 20px;
+	}
+	a {
+		font-size: 16px;
 }
+	}
 @media (min-width: 992px) {
 	html {
 		scroll-padding-top: 89px;
@@ -948,4 +974,6 @@ header.hero-img {
 			min-width: 10vw;
 		  }
 	  }
+}
+
 }
