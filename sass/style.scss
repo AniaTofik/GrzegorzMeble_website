@@ -150,7 +150,7 @@ header.hero-img {
 	.btn {
 		margin-top: 14px;
 		color: $light-color;
-		background-color: rgb(190, 129, 14);
+		background-color: rgb(149, 99, 3);
 		font-weight: 600;
 		letter-spacing: 1px;
 		transition: background-color, .5s;
@@ -385,9 +385,10 @@ header.hero-img {
 			font-weight: 600;
 			margin-top: 10px;
 			margin-bottom: 15px;
-			color: $orange;
+			text-transform: uppercase;
+			color: rgb(149,99,3);
 			letter-spacing: 1px;
-			text-shadow: 1px 1px 1px rgb(155, 87, 32);
+			text-shadow: 0.5px 0.5px 0.5px rgb(149, 99, 3);
 		  }
 		  
 		 p {
@@ -453,12 +454,13 @@ header.hero-img {
 	color: $brown;
 .privacy_policy-text-title {
 		font-size: 18px;
-			font-weight: 600;
-			margin-top: 10px;
-			margin-bottom: 15px;
-			color: $orange;
-			letter-spacing: 1px;
-			text-shadow: 1px 1px 1px rgb(155, 87, 32);
+		font-weight: 600;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		color: rgb(149, 99, 3);
+		letter-spacing: 1px;
+		text-shadow: 0.5px 0.5px 0.5px rgb(149, 99, 3);
 }
 	p span {
 				font-weight: bold;
@@ -483,7 +485,7 @@ header.hero-img {
 }
 
 .cookie-modal button {
-  background-color: rgb(190, 129, 14);
+  background-color: rgb(149, 99, 3);
   border: none;
   color: $light-color;
   padding: 10px 20px;
@@ -506,8 +508,9 @@ header.hero-img {
 			max-width: 800px;
 		.btn {
 			margin-top: 14px;
+			text-transform: uppercase;
 			color: $light-color;
-			background-color: rgb(190, 129, 14);
+			background-color: rgb(149, 99, 3);
 			font-weight: 600;
 			letter-spacing: 1px;
 			transition: background-color, .5s;

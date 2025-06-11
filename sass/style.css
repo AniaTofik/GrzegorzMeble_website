@@ -152,7 +152,7 @@ header.hero-img .hero-text p span {
 header.hero-img .btn {
   margin-top: 14px;
   color: #fff;
-  background-color: rgb(190, 129, 14);
+  background-color: rgb(149, 99, 3);
   font-weight: 600;
   letter-spacing: 1px;
   transition: background-color, 0.5s;
@@ -367,9 +367,10 @@ header.hero-img .btn:hover {
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #e4a112;
+  text-transform: uppercase;
+  color: rgb(149, 99, 3);
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px rgb(155, 87, 32);
+  text-shadow: 0.5px 0.5px 0.5px rgb(149, 99, 3);
 }
 .why-us-content .why-us-item p {
   font-size: 16px;
@@ -425,9 +426,10 @@ header.hero-img .btn:hover {
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #e4a112;
+  text-transform: uppercase;
+  color: rgb(149, 99, 3);
   letter-spacing: 1px;
-  text-shadow: 1px 1px 1px rgb(155, 87, 32);
+  text-shadow: 0.5px 0.5px 0.5px rgb(149, 99, 3);
 }
 .privacy_policy-text p span {
   font-weight: bold;
@@ -451,7 +453,7 @@ header.hero-img .btn:hover {
 }
 
 .cookie-modal button {
-  background-color: rgb(190, 129, 14);
+  background-color: rgb(149, 99, 3);
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -475,8 +477,9 @@ header.hero-img .btn:hover {
 }
 .contact .form .btn {
   margin-top: 14px;
+  text-transform: uppercase;
   color: #fff;
-  background-color: rgb(190, 129, 14);
+  background-color: rgb(149, 99, 3);
   font-weight: 600;
   letter-spacing: 1px;
   transition: background-color, 0.5s;
